@@ -1,6 +1,5 @@
 using FastEndpoints;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Diagnostics;
 using WebDevMasterClass.Services.Products.Data;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -30,3 +29,5 @@ app.MapDefaultEndpoints();
 app.UseFastEndpoints();
 
 app.Run();
+
+public partial class Program { }
