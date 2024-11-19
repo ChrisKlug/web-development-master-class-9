@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebDevMasterClass.ServiceDe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebDevMasterClass.Web", "src\WebDevMasterClass.Web\WebDevMasterClass.Web.csproj", "{00AB3323-C955-4349-828D-F66F625D26FD}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebDevMasterClass.Services.Products", "src\WebDevMasterClass.Services.Products\WebDevMasterClass.Services.Products.csproj", "{E9550715-F2DB-440E-BABF-1426D7929C68}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{00AB3323-C955-4349-828D-F66F625D26FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00AB3323-C955-4349-828D-F66F625D26FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00AB3323-C955-4349-828D-F66F625D26FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9550715-F2DB-440E-BABF-1426D7929C68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9550715-F2DB-440E-BABF-1426D7929C68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9550715-F2DB-440E-BABF-1426D7929C68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9550715-F2DB-440E-BABF-1426D7929C68}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

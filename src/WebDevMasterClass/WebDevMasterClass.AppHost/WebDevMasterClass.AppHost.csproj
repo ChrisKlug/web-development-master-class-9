@@ -16,6 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\WebDevMasterClass.Services.Products\WebDevMasterClass.Services.Products.csproj" />
     <ProjectReference Include="..\..\WebDevMasterClass.Web\WebDevMasterClass.Web.csproj" />
   </ItemGroup>
 
