@@ -1,9 +1,13 @@
+using FastEndpoints;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Diagnostics;
 using WebDevMasterClass.Services.Products.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.AddServiceDefaults();
+
+builder.Services.AddFastEndpoints();
 
 builder.AddSqlServerDbContext<ProductsContext>("Sql");
 builder.Services.AddScoped<IProducts, EfProducts>();
@@ -23,6 +27,6 @@ if (app.Environment.IsDevelopment())
 
 app.MapDefaultEndpoints();
 
-app.MapGet("/", () => "Hello World!");
+app.UseFastEndpoints();
 
 app.Run();
