@@ -1,6 +1,6 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using WebDevMasterClass.Services.Products.Client;
 
-namespace WebDevMasterClass.Services.Products.Client;
+namespace Microsoft.Extensions.DependencyInjection;
 public static class IServiceCollectionExtensions
 {
     public static IServiceCollection AddProductsClient(this IServiceCollection services, Action<ProductsClientOptions> config)
