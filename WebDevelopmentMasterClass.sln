@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35208.52
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebDevMasterClass.AppHost", "src\WebDevMasterClass\WebDevMasterClass.AppHost\WebDevMasterClass.AppHost.csproj", "{C1A19196-65DA-4CD0-8761-5CCE85BE388E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebDevMasterClass.AppHost", "src\WebDevMasterClass\WebDevMasterClass.AppHost\WebDevMasterClass.AppHost.csproj", "{C1A19196-65DA-4CD0-8761-5CCE85BE388E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebDevMasterClass.ServiceDefaults", "src\WebDevMasterClass\WebDevMasterClass.ServiceDefaults\WebDevMasterClass.ServiceDefaults.csproj", "{4DAC3E53-3DD2-423C-8993-8B692D32FC11}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebDevMasterClass.Web", "src\WebDevMasterClass.Web\WebDevMasterClass.Web.csproj", "{00AB3323-C955-4349-828D-F66F625D26FD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{4DAC3E53-3DD2-423C-8993-8B692D32FC11}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4DAC3E53-3DD2-423C-8993-8B692D32FC11}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4DAC3E53-3DD2-423C-8993-8B692D32FC11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00AB3323-C955-4349-828D-F66F625D26FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00AB3323-C955-4349-828D-F66F625D26FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00AB3323-C955-4349-828D-F66F625D26FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00AB3323-C955-4349-828D-F66F625D26FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
