@@ -6,6 +6,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using System.Net.Http.Headers;
+using System.Text;
 
 namespace WebDevMasterClass.Testing;
 
@@ -13,7 +15,8 @@ public static class TestHelper
 {
     public static async Task ExecuteTest<TProgram>(
         Func<HttpClient, Task> test,
-        Action<IServiceCollection>? serviceConfig = null
+        Action<IServiceCollection>? serviceConfig = null,
+        bool isAuthenticated = true
     )
         where TProgram : class
     {
@@ -25,19 +28,26 @@ public static class TestHelper
                     builder.ConfigureTestServices(services =>
                     {
                         serviceConfig?.Invoke(services);
+
+                        services.AddTestAuthentication();
                     });
                 });
 
-
-
         var client = app.CreateClient();
+
+        if (isAuthenticated)
+        {
+            var base64EncodedAuthenticationString = Convert.ToBase64String(Encoding.UTF8.GetBytes("test:test"));
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Basic", base64EncodedAuthenticationString);
+        }
 
         await test(client);
     }
 
     public static async Task ExecuteTest<TProgram, TDbContext>(
         Func<SqlCommand, Task> dbSetup,
-        Func<HttpClient, Task> test
+        Func<HttpClient, Task> test,
+        bool isAuthenticated = true
     )
         where TProgram : class
         where TDbContext : DbContext
@@ -69,6 +79,8 @@ public static class TestHelper
                                 options.ExecutionStrategy(x => new NonRetryingExecutionStrategy(x));
                             });
                         }, ServiceLifetime.Singleton);
+
+                        services.AddTestAuthentication();
                     });
                 });
 
@@ -83,6 +95,12 @@ public static class TestHelper
             await dbSetup(cmd);
 
             var client = app.CreateClient();
+
+            if (isAuthenticated)
+            {
+                var base64EncodedAuthenticationString = Convert.ToBase64String(Encoding.UTF8.GetBytes("test:test"));
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Basic", base64EncodedAuthenticationString);
+            }
 
             await test(client);
         }
