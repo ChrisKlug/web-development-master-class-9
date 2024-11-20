@@ -8,7 +8,9 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.ServiceDiscovery.Yarp" Version="9.0.0" />
+    <PackageReference Include="Microsoft.Orleans.Persistence.Memory" Version="9.0.0" />
     <PackageReference Include="Microsoft.Orleans.Server" Version="9.0.0" />
+    <PackageReference Include="OrleansDashboard" Version="8.2.0" />
   </ItemGroup>
 
   <ItemGroup>

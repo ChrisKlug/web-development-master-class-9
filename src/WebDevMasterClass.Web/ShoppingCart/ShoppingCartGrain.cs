@@ -21,22 +21,35 @@ public class ShoppingCartItem
 
 public class ShoppingCartGrain : Grain, IShoppingCart
 {
-    private readonly List<ShoppingCartItem> items = new();
+    private readonly IPersistentState<State> state;
+
+    public ShoppingCartGrain(
+        [PersistentState("ShoppingCartState")]
+        IPersistentState<State> state
+    )
+    {
+        this.state = state;
+    }
 
     public Task AddItem(ShoppingCartItem item)
     {
-        var existingItem = items.FirstOrDefault(x => x.ProductId == item.ProductId);
+        var existingItem = state.State.Items.FirstOrDefault(x => x.ProductId == item.ProductId);
         if (existingItem is null)
         {
-            items.Add(item);
+            state.State.Items.Add(item);
         }
         else
         {
             existingItem.Count += item.Count;
         }
-        return Task.CompletedTask;
+        return state.WriteStateAsync();
     }
 
     public Task<ShoppingCartItem[]> GetItems()
-        => Task.FromResult(items.ToArray());
+        => Task.FromResult(state.State.Items.ToArray());
+
+    public class State
+    {
+        public List<ShoppingCartItem> Items { get; set; } = new();
+    }
 }

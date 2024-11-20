@@ -12,6 +12,14 @@ builder.Services.AddMvc();
 builder.Services.AddOrleans(silo =>
 {
     silo.UseLocalhostClustering();
+    silo.AddMemoryGrainStorageAsDefault();
+    if (Environment.GetEnvironmentVariable("DashboardPort") is not null)
+    {
+        silo.UseDashboard(options =>
+        {
+            options.Port = int.Parse(Environment.GetEnvironmentVariable("DashboardPort")!);
+        });
+    }
 });
 
 builder.Services.AddProductsClient(options =>

@@ -11,7 +11,8 @@ var products = builder.AddProject<Projects.WebDevMasterClass_Services_Products>(
 builder.AddProject<Projects.WebDevMasterClass_Web>("web", "aspire")
         .WithExternalHttpEndpoints()
         .WithReference(ui.GetEndpoint("http"))
-        .WithReference(products);
+        .WithReference(products)
+        .WithHttpEndpoint(env: "DashboardPort");
 
 
 builder.Build().Run();
