@@ -24,4 +24,8 @@ builder.AddProject<Projects.WebDevMasterClass_Web>("web", "aspire")
         .WithHttpEndpoint(env: "DashboardPort");
 
 
+builder.AddProject<Projects.WebDevMasterClass_Services_Orders>("orders")
+                        .WithEnvironment("ConnectionStrings__Sql", builder.Configuration.GetConnectionString("Orders"));
+
+
 builder.Build().Run();
