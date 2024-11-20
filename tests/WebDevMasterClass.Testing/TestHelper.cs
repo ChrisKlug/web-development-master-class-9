@@ -6,17 +6,40 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using System.Net;
 
 namespace WebDevMasterClass.Testing;
 
 public static class TestHelper
 {
+    public static async Task ExecuteTest<TProgram>(
+        Func<HttpClient, Task> test,
+        Action<IServiceCollection>? serviceConfig = null
+    )
+        where TProgram : class
+    {
+        var app = new WebApplicationFactory<TProgram>()
+                .WithWebHostBuilder(builder =>
+                {
+                    builder.UseEnvironment("IntegrationTesting");
+
+                    builder.ConfigureTestServices(services =>
+                    {
+                        serviceConfig?.Invoke(services);
+                    });
+                });
+
+
+
+        var client = app.CreateClient();
+
+        await test(client);
+    }
+
     public static async Task ExecuteTest<TProgram, TDbContext>(
         Func<SqlCommand, Task> dbSetup,
         Func<HttpClient, Task> test
     )
-        where TProgram: class
+        where TProgram : class
         where TDbContext : DbContext
     {
         var app = new WebApplicationFactory<TProgram>()
