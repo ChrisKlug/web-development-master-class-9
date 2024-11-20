@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Hosting;
+﻿using Grpc.Core;
+using Grpc.Net.Client;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.AspNetCore.TestHost;
 using Microsoft.Data.SqlClient;
@@ -103,6 +105,66 @@ public static class TestHelper
             }
 
             await test(client);
+        }
+    }
+    public static async Task ExecuteTest<TProgram, TDbContext, TGrpcService>(
+        Func<TGrpcService, Task> test,
+        Func<SqlCommand, Task>? dbConfig = null,
+        Func<SqlCommand, Task>? validateDb = null
+    )
+        where TProgram : class
+        where TDbContext : DbContext
+        where TGrpcService : ClientBase
+    {
+        var app = new WebApplicationFactory<TProgram>()
+                    .WithWebHostBuilder(builder =>
+                    {
+                        builder.UseEnvironment("IntegrationTesting");
+
+                        builder.ConfigureTestServices(services =>
+                        {
+                            var dbDescriptor = services.First(x => x.ServiceType == typeof(TDbContext));
+                            var optionsDescriptor = services.First(x => x.ServiceType == typeof(DbContextOptions<TDbContext>));
+
+                            services.Remove(dbDescriptor);
+                            services.Remove(optionsDescriptor);
+
+                            var config = services.BuildServiceProvider().GetRequiredService<IConfiguration>();
+
+                            services.AddDbContext<TDbContext>((services, options) =>
+                            {
+                                var config = services.GetRequiredService<IConfiguration>();
+                                options.UseSqlServer(config.GetConnectionString("Sql"), options =>
+                                {
+                                    options.ExecutionStrategy(x => new NonRetryingExecutionStrategy(x));
+                                });
+                            }, ServiceLifetime.Singleton);
+                        });
+                    });
+
+        using (var services = app.Services.CreateScope())
+        {
+            var ctx = services.ServiceProvider.GetRequiredService<TDbContext>();
+            using (var transaction = ctx.Database.BeginTransaction())
+            {
+                var conn = ctx.Database.GetDbConnection();
+                var cmd = (SqlCommand)conn.CreateCommand();
+                cmd.Transaction = (SqlTransaction)transaction.GetDbTransaction();
+
+                if (dbConfig != null)
+                    await dbConfig(cmd);
+
+                var options = new GrpcChannelOptions
+                {
+                    HttpHandler = app.Server.CreateHandler()
+                };
+                var channel = GrpcChannel.ForAddress(app.Server.BaseAddress, options);
+                var client = (TGrpcService)Activator.CreateInstance(typeof(TGrpcService), channel)!;
+                await test(client);
+
+                if (validateDb != null)
+                    await validateDb(cmd);
+            }
         }
     }
 }
