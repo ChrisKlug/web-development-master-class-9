@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Grpc.AspNetCore" Version="2.66.0" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="9.0.0" />
     <PackageReference Include="Microsoft.Extensions.ServiceDiscovery.Yarp" Version="9.0.0" />
     <PackageReference Include="Microsoft.Orleans.Persistence.Memory" Version="9.0.0" />
@@ -17,6 +18,16 @@
   <ItemGroup>
     <ProjectReference Include="..\WebDevMasterClass.Services.Products.Client\WebDevMasterClass.Services.Products.Client.csproj" />
     <ProjectReference Include="..\WebDevMasterClass\WebDevMasterClass.ServiceDefaults\WebDevMasterClass.ServiceDefaults.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Protos\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Protobuf Include="..\WebDevMasterClass.Services.Orders\Protos\orders.proto" GrpcServices="Client">
+      <Link>Protos\orders.proto</Link>
+    </Protobuf>
   </ItemGroup>
 
 </Project>

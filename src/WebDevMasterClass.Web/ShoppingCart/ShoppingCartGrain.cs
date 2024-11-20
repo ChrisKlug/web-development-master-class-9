@@ -4,6 +4,7 @@ public interface IShoppingCart : IGrainWithStringKey
 {
     Task AddItem(ShoppingCartItem item);
     Task<ShoppingCartItem[]> GetItems();
+    Task Clear();
 }
 
 [GenerateSerializer]
@@ -47,6 +48,12 @@ public class ShoppingCartGrain : Grain, IShoppingCart
 
     public Task<ShoppingCartItem[]> GetItems()
         => Task.FromResult(state.State.Items.ToArray());
+
+    public Task Clear()
+    {
+        DeactivateOnIdle();
+        return state.ClearStateAsync();
+    }
 
     public class State
     {

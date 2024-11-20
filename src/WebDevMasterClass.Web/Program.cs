@@ -83,6 +83,10 @@ builder.Services.AddOrleans(silo =>
         });
     }
 });
+builder.Services.AddGrpcClient<WebDevMasterClass.Services.Orders.gRPC.OrdersService.OrdersServiceClient>(options =>
+{
+    options.Address = new Uri("https://orders");
+});
 
 builder.Services.AddProductsClient(options =>
 {

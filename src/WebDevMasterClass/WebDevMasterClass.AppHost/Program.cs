@@ -16,16 +16,18 @@ var ui = builder.AddDockerfile("ui", "../../../_resources/ui")
 var products = builder.AddProject<Projects.WebDevMasterClass_Services_Products>("products")
                         .WithEnvironment("ConnectionStrings__Sql", builder.Configuration.GetConnectionString("Products"));
 
+var orders = builder.AddProject<Projects.WebDevMasterClass_Services_Orders>("orders")
+                        .WithEnvironment("ConnectionStrings__Sql", builder.Configuration.GetConnectionString("Orders"));
+
 builder.AddProject<Projects.WebDevMasterClass_Web>("web", "aspire")
         .WithExternalHttpEndpoints()
         .WithReference(ui.GetEndpoint("http"))
         .WithReference(products)
+        .WithReference(orders)
         .WithEnvironment("IdentityServer__Url", idsrv.GetEndpoint("https"))
         .WithHttpEndpoint(env: "DashboardPort");
 
 
-builder.AddProject<Projects.WebDevMasterClass_Services_Orders>("orders")
-                        .WithEnvironment("ConnectionStrings__Sql", builder.Configuration.GetConnectionString("Orders"));
 
 
 builder.Build().Run();
