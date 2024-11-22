@@ -1,4 +1,5 @@
 ﻿using Grpc.Core;
+using System.Diagnostics;
 using WebDevMasterClass.Services.Orders.Data;
 using WebDevMasterClass.Services.Orders.Entities;
 using WebDevMasterClass.Services.Orders.gRPC;
@@ -7,8 +8,13 @@ namespace WebDevMasterClass.Services.Orders.Services;
 
 public class OrdersService(OrdersContext ctx, ILogger<OrdersService> logger) : gRPC.OrdersService.OrdersServiceBase
 {
+    public const string ActivitySourceName = "OrdersService";
+    private static readonly ActivitySource ActivitySource = new(ActivitySourceName);
+
     public override async Task<AddOrderResponse> AddOrder(AddOrderRequest request, ServerCallContext context)
     {
+        Activity.Current?.SetTag("ServiceName", nameof(OrdersService));
+
         var deliveryAddress = DeliveryAddress.Create(request.DeliveryAddress.Name,
                                                     request.DeliveryAddress.Street1,
                                                     request.DeliveryAddress.Street2,
@@ -24,6 +30,8 @@ public class OrdersService(OrdersContext ctx, ILogger<OrdersService> logger) : g
                                                     request.BillingAddress.Country);
 
         var order = Order.Create(deliveryAddress, billingAddress);
+
+        Activity.Current?.AddEvent(new ActivityEvent("Adding Order"));
 
         foreach (var item in request.Items)
         {
