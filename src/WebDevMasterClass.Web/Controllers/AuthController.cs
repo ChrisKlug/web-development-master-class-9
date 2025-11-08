@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 using Microsoft.AspNetCore.Mvc;
 
@@ -13,13 +13,17 @@ public class AuthController : Controller
         if (!Url.IsLocalUrl(returnUrl))
             returnUrl = "/";
 
-        return Challenge(new AuthenticationProperties { RedirectUri = returnUrl });
+        return Challenge(new AuthenticationProperties { 
+            RedirectUri = returnUrl 
+        });
     }
 
     [HttpGet("logout")]
     public async Task LogOut()
     {
         await HttpContext.SignOutAsync();
-        await HttpContext.SignOutAsync(OpenIdConnectDefaults.AuthenticationScheme);
+        await HttpContext.SignOutAsync(
+            OpenIdConnectDefaults.AuthenticationScheme
+        );
     }
 }

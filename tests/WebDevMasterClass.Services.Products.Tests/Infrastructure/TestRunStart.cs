@@ -1,4 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using WebDevMasterClass.Services.Products.Data;
 using Xunit.Abstractions;
@@ -16,14 +16,14 @@ public class TestRunStart : XunitTestFramework
     public TestRunStart(IMessageSink messageSink) : base(messageSink)
     {
         var config = new ConfigurationManager()
-                        .AddJsonFile("appSettings.IntegrationTesting.json")
-                        .Build();
-
+            .AddJsonFile("appSettings.IntegrationTesting.json")
+            .Build();
+        
         var options = new DbContextOptionsBuilder<ProductsContext>()
-                            .UseSqlServer(config.GetConnectionString("Sql"));
-
+            .UseSqlServer(config.GetConnectionString("WebDevMasterClass-Products"));
+        
         var dbContext = new ProductsContext(options.Options);
-
+        
         dbContext.Database.Migrate();
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace WebDevMasterClass.Web.ShoppingCart;
+namespace WebDevMasterClass.Web.ShoppingCart;
 
 public interface IShoppingCart : IGrainWithStringKey
 {
@@ -20,18 +20,18 @@ public class ShoppingCartItem
     public int Count { get; set; }
 }
 
-public class ShoppingCartGrain : Grain, IShoppingCart
+public class ShoppingCartGrain: Grain, IShoppingCart
 {
-    private readonly IPersistentState<State> state;
+    private readonly IPersistentState<ShoppingCartState> state;
 
     public ShoppingCartGrain(
-        [PersistentState("ShoppingCartState")]
-        IPersistentState<State> state
+        [PersistentState("ShoppingCartState")] 
+        IPersistentState<ShoppingCartState> state
     )
     {
         this.state = state;
     }
-
+    
     public Task AddItem(ShoppingCartItem item)
     {
         var existingItem = state.State.Items.FirstOrDefault(x => x.ProductId == item.ProductId);
@@ -55,7 +55,7 @@ public class ShoppingCartGrain : Grain, IShoppingCart
         return state.ClearStateAsync();
     }
 
-    public class State
+    public class ShoppingCartState
     {
         public List<ShoppingCartItem> Items { get; set; } = new();
     }

@@ -1,5 +1,3 @@
-﻿namespace WebDevMasterClass.Web.Models;
-
 public class AddOrderModel
 {
     public required Item[] Items { get; set; }
@@ -11,7 +9,7 @@ public class AddOrderModel
         public int ItemId { get; set; }
         public int Quantity { get; set; }
     }
-
+    
     public class Address
     {
         public required string Name { get; set; }

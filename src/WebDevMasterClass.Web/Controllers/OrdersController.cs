@@ -1,18 +1,21 @@
-﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using WebDevMasterClass.Services.Orders.gRPC;
 using WebDevMasterClass.Services.Products.Client;
-using WebDevMasterClass.Web.Models;
 using WebDevMasterClass.Web.ShoppingCart;
 
 namespace WebDevMasterClass.Web.Controllers;
+
 [Route("api/[controller]")]
 [ApiController]
 [Authorize]
-public class OrdersController(IProductsClient productsClient, ILogger<OrdersController> logger, 
-                                OrdersService.OrdersServiceClient ordersService, IGrainFactory grainFactory) : ControllerBase
+public class OrdersController(IProductsClient products,
+    OrdersService.OrdersServiceClient ordersService,
+    IGrainFactory grainFactory,
+    ILogger<OrdersController> logger) : ControllerBase
 {
+    [HttpPost]
     public async Task<IActionResult> AddOrder(AddOrderModel order)
     {
         var request = new AddOrderRequest
@@ -37,8 +40,10 @@ public class OrdersController(IProductsClient productsClient, ILogger<OrdersCont
             }
         };
 
-        var retrievalTasks = order.Items.Select(x => productsClient.GetProduct(x.ItemId)).ToArray();
-
+        var retrievalTasks = order.Items.Select(x =>
+            products.GetProduct(x.ItemId)
+        ).ToArray();
+        
         try
         {
             await Task.WhenAll(retrievalTasks);
@@ -48,11 +53,12 @@ public class OrdersController(IProductsClient productsClient, ILogger<OrdersCont
             logger.LogError(ex, "Failed to retrieve product information");
             return StatusCode(500, "Something went wrong...");
         }
-        var retrievedProducts = retrievalTasks.Select(x => x.Result).ToArray();
-
+     
+        var retrievedProducts = retrievalTasks.Select(x => x.Result!).ToArray();
+        
         foreach (var item in order.Items)
         {
-            var product = retrievedProducts.First(x => x.Id == item.ItemId)!;
+            var product = retrievedProducts.First(x => x.Id == item.ItemId);
             request.Items.Add(new OrderItem
             {
                 Name = product.Name,
@@ -65,8 +71,6 @@ public class OrdersController(IProductsClient productsClient, ILogger<OrdersCont
         try
         {
             response = await ordersService.AddOrderAsync(request);
-            var shoppingCart = grainFactory.GetGrain<IShoppingCart>(Request.Cookies["ShoppingCartId"]);
-            await shoppingCart.Clear();
         }
         catch (Exception ex)
         {
@@ -79,6 +83,9 @@ public class OrdersController(IProductsClient productsClient, ILogger<OrdersCont
             logger.LogError("Failed to add order: {error}", response.Error);
             return StatusCode(500, "Something went wrong...");
         }
+        
+        var shoppingCart = grainFactory.GetGrain<IShoppingCart>(Request.Cookies["ShoppingCartId"]!);
+        await shoppingCart.Clear();
 
         return Ok(new { response.Success, response.OrderId });
     }

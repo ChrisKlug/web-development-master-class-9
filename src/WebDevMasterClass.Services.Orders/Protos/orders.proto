@@ -14,23 +14,26 @@ message AddOrderRequest {
   repeated OrderItem items = 3;
 }
 
-message Address {
-	string name = 1;
-	string street1 = 2;
-	string street2 = 3;
-	string postalCode = 4;
-	string city = 5;
-	string country = 6;
+message Address
+{
+  string name = 1;
+  string street1 = 2;
+  string street2 = 3;
+  string postalCode = 4;
+  string city = 5;
+  string country = 6;
 }
 
-message OrderItem {
-	string name = 1;
-	int32 quantity = 2;
-	float price = 3;
+message OrderItem
+{
+  string name = 1;
+  int32 quantity = 2;
+  float price = 3;
 }
 
 message AddOrderResponse {
-	bool success = 1;
-	optional string orderId = 2;
-	optional string error = 3;
+  bool success = 1;
+  optional string orderId = 2;
+  optional string error = 3;
 }
+

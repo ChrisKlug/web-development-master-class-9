@@ -1,8 +1,7 @@
-﻿namespace WebDevMasterClass.Services.Orders.Entities;
+namespace WebDevMasterClass.Services.Orders.Entities;
 
 public class Order
 {
-    private int id;
     private List<OrderItem> _items = new();
     private List<Address> _addresses = new();
 
@@ -18,7 +17,7 @@ public class Order
         OrderDate = orderDate;
     }
 
-    public static Order Create(DeliveryAddress deliveryAddress, BillingAddress billingAddress)
+    public static Order Create(DeliveryAddress deliveryAddress, BillingAddress billingAddress) 
         => new Order(GenerateOrderId(), deliveryAddress, billingAddress, DateTimeOffset.Now);
 
     public OrderItem AddItem(string name, int quantity, decimal price)

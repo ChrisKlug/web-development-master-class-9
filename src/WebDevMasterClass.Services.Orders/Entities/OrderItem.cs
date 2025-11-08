@@ -1,4 +1,4 @@
-﻿namespace WebDevMasterClass.Services.Orders.Entities;
+namespace WebDevMasterClass.Services.Orders.Entities;
 
 public class OrderItem
 {

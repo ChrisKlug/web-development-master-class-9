@@ -1,11 +1,12 @@
-﻿using FastEndpoints;
+using FastEndpoints;
 using Microsoft.AspNetCore.Http.HttpResults;
 using WebDevMasterClass.Services.Products.Data;
 using WebDevMasterClass.Services.Products.Entities;
 
 namespace WebDevMasterClass.Services.Products.Endpoints;
 
-public class FeaturedProductsEndpoint(IProducts products) : EndpointWithoutRequest<Ok<Product[]>>
+public class FeaturedProductsEndpoint(IProducts products)
+    : EndpointWithoutRequest<Ok<Product[]>>
 {
     public override void Configure()
     {

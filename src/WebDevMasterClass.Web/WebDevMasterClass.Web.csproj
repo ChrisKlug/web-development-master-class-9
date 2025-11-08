@@ -1,33 +1,36 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
-  <PropertyGroup>
-    <TargetFramework>net9.0</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-  </PropertyGroup>
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Grpc.AspNetCore" Version="2.66.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="9.0.0" />
-    <PackageReference Include="Microsoft.Extensions.ServiceDiscovery.Yarp" Version="9.0.0" />
-    <PackageReference Include="Microsoft.Orleans.Persistence.Memory" Version="9.0.0" />
-    <PackageReference Include="Microsoft.Orleans.Server" Version="9.0.0" />
-    <PackageReference Include="OrleansDashboard" Version="8.2.0" />
-  </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\WebDevMasterClass.ServiceDefaults\WebDevMasterClass.ServiceDefaults.csproj" />
+      <ProjectReference Include="..\WebDevMasterClass.Services.Products.Client \WebDevMasterClass.Services.Products.Client.csproj" />
+    </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\WebDevMasterClass.Services.Products.Client\WebDevMasterClass.Services.Products.Client.csproj" />
-    <ProjectReference Include="..\WebDevMasterClass\WebDevMasterClass.ServiceDefaults\WebDevMasterClass.ServiceDefaults.csproj" />
-  </ItemGroup>
+    <ItemGroup>
+      <PackageReference Include="FakeItEasy" Version="8.3.0" />
+      <PackageReference Include="Grpc.AspNetCore" Version="2.71.0" />
+      <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="9.0.10" />
+      <PackageReference Include="Microsoft.Extensions.ServiceDiscovery.Yarp" Version="9.5.2" />
+      <PackageReference Include="Microsoft.Orleans.Persistence.Memory" Version="9.2.1" />
+      <PackageReference Include="Microsoft.Orleans.Server" Version="9.2.1" />
+      <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="9.0.0" />
+      <PackageReference Include="OrleansDashboard" Version="8.2.0" />
+      <PackageReference Include="Yarp.ReverseProxy" Version="2.3.0" />
+    </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Protos\" />
-  </ItemGroup>
+    <ItemGroup>
+      <Folder Include="Controllers\" />
+    </ItemGroup>
 
-  <ItemGroup>
-    <Protobuf Include="..\WebDevMasterClass.Services.Orders\Protos\orders.proto" GrpcServices="Client">
-      <Link>Protos\orders.proto</Link>
-    </Protobuf>
-  </ItemGroup>
+    <ItemGroup>
+      <Protobuf Include="..\WebDevMasterClass.Services.Orders\Protos\orders.proto" GrpcServices="Client">
+        <Link>Protos\orders.proto</Link>
+      </Protobuf>
+    </ItemGroup>
 
 </Project>

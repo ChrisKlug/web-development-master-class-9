@@ -1,8 +1,10 @@
-﻿using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using WebDevMasterClass.Services.Products.Client;
 
 namespace WebDevMasterClass.Web.Controllers;
+
 [Route("api/[controller]")]
 [ApiController]
 public class ProductsController(IProductsClient productsClient) : ControllerBase
@@ -13,11 +15,10 @@ public class ProductsController(IProductsClient productsClient) : ControllerBase
 
     [HttpGet("{id:int}")]
     public async Task<Results<Ok<Product>, NotFound>> GetProduct(int id)
-    { 
+    {
         var product = await productsClient.GetProduct(id);
-
-        return product is null
-                ? TypedResults.NotFound()
-                : TypedResults.Ok(product);
+        return product is not null
+            ? TypedResults.Ok(product)
+            : TypedResults.NotFound();
     }
 }

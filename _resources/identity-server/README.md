@@ -7,5 +7,5 @@ This Identity Server configuration has been cloned from https://github.com/Duend
 To build the Docker image, just run
 
 ```
-docker build -t identity-server .
+docker build -t zerokoll/webdevworkshop-identity-server .
 ```

@@ -1,38 +1,40 @@
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using WebDevMasterClass.Services.Orders.Entities;
 
 namespace WebDevMasterClass.Services.Orders.Data;
 
 public class OrdersContext : DbContext
 {
-    public OrdersContext(DbContextOptions<OrdersContext> options)
-        : base(options) { }
+    public OrdersContext(DbContextOptions<OrdersContext> options) : base(options)
+    {
+        
+    }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Order>(x =>
-            {
-                x.ToTable("Orders");
+        {
+            x.ToTable("Orders");
 
-                x.Property<int>("id");
+            x.Property<int>("Id");
 
-                x.HasMany<OrderItem>("_items").WithOne().HasForeignKey("OrderId").IsRequired();
-                x.HasMany<Address>("_addresses").WithOne().HasForeignKey("OrderId").IsRequired();
+            x.HasMany<OrderItem>("_items").WithOne().HasForeignKey("OrderId").IsRequired();
+            x.HasMany<Address>("_addresses").WithOne().HasForeignKey("OrderId").IsRequired();
 
-                x.Ignore(x => x.Items);
+            x.Ignore(x => x.Items);
 
-                x.HasKey("id");
-            });
+            x.HasKey("Id");
+        });
 
         modelBuilder.Entity<OrderItem>(x =>
-                {
-                    x.ToTable("OrderItems");
+        {
+            x.ToTable("OrderItems");
 
-                    x.Property<int>("id").HasColumnName("ItemId");
-                    x.Property<int>("OrderId");
+            x.Property<int>("id").HasColumnName("ItemId");
+            x.Property<int>("OrderId");
 
-                    x.HasKey("id");
-                });
+            x.HasKey("id");
+        });
 
         modelBuilder.Entity<Address>(x =>
         {
@@ -43,8 +45,18 @@ public class OrdersContext : DbContext
             x.Property<string>("AddressType");
 
             x.HasDiscriminator<string>("AddressType")
-                  .HasValue<BillingAddress>("Billing")
-                  .HasValue<DeliveryAddress>("Delivery");
+                .HasValue<BillingAddress>("Billing")
+                .HasValue<DeliveryAddress>("Delivery");
+
+            x.HasKey("Id");
+        });
+        
+        modelBuilder.Entity<Event>(x =>
+        {
+            x.ToTable("Events");
+
+            x.Property(x => x.Type).HasColumnName("EventType").HasConversion(x => x.ToString(), x => Enum.Parse<EventType>(x));
+            x.Property(x => x.State).HasConversion(x => x.ToString(), x => Enum.Parse<EventState>(x));
 
             x.HasKey("Id");
         });

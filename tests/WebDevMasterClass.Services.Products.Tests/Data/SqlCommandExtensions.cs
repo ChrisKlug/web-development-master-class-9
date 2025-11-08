@@ -1,34 +1,35 @@
-﻿using Microsoft.Data.SqlClient;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Data.Common;
+using Microsoft.Data.SqlClient;
 
 namespace WebDevMasterClass.Services.Products.Tests.Data;
-internal static class SqlCommandExtensions
+
+public static class SqlCommandExtensions
 {
-    public static async Task<int> AddProduct(this SqlCommand cmd,
-                                            string name,
-                                            string description,
-                                            decimal price,
-                                            bool isFeatured,
-                                            string imageName)
+    public static async Task<int> AddProduct(this DbCommand cmd,
+        string name,
+        string description,
+        decimal price,
+        bool isFeatured,
+        string imageName)
     {
-        cmd.CommandText = "INSERT INTO Products (Name, Description, Price, IsFeatured, ThumbnailUrl, ImageUrl) " +
-                          "VALUES (@Name, @Description, @Price, @IsFeatured, @ThumbnailUrl, @ImageUrl); " +
-                          "SELECT SCOPE_IDENTITY();";
+        var sqlCmd = cmd as SqlCommand;
+        if (sqlCmd is null)
+            throw new Exception();
+    
+        sqlCmd.CommandText = "INSERT INTO Products (Name, Description, Price, IsFeatured, ThumbnailUrl, ImageUrl) " +
+                             "VALUES (@Name, @Description, @Price, @IsFeatured, @ThumbnailUrl, @ImageUrl); " +
+                             "SELECT SCOPE_IDENTITY();";
+                          
+        sqlCmd.Parameters.AddWithValue("@Name", name);
+        sqlCmd.Parameters.AddWithValue("@Description", description);
+        sqlCmd.Parameters.AddWithValue("@Price", price);
+        sqlCmd.Parameters.AddWithValue("@IsFeatured", isFeatured);
+        sqlCmd.Parameters.AddWithValue("@ThumbnailUrl", $"{imageName}_thumbnail.jpg");
+        sqlCmd.Parameters.AddWithValue("@ImageUrl", $"{imageName}.jpg");
 
-        cmd.Parameters.AddWithValue("@Name", name);
-        cmd.Parameters.AddWithValue("@Description", description);
-        cmd.Parameters.AddWithValue("@Price", price);
-        cmd.Parameters.AddWithValue("@IsFeatured", isFeatured);
-        cmd.Parameters.AddWithValue("@ThumbnailUrl", $"{imageName}_thumbnail.jpg");
-        cmd.Parameters.AddWithValue("@ImageUrl", $"{imageName}.jpg");
+        var ret = Convert.ToInt32(await sqlCmd.ExecuteScalarAsync());
 
-        var ret = Convert.ToInt32(await cmd.ExecuteScalarAsync());
-
-        cmd.Parameters.Clear();
+        sqlCmd.Parameters.Clear();
 
         return ret;
     }
