@@ -1,0 +1,1552 @@
+<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=003BE30CF6D5AE49A6B59964558526CE/@KeyIndexDefined">true</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=003BE30CF6D5AE49A6B59964558526CE/Applicability/=Live/@EntryIndexedValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=003BE30CF6D5AE49A6B59964558526CE/Categories/=_005BWebDev_0020Masterclass_005D/@EntryIndexedValue">[WebDev Masterclass]</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=003BE30CF6D5AE49A6B59964558526CE/Description/@EntryValue">Map OrderItems</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=003BE30CF6D5AE49A6B59964558526CE/Reformat/@EntryValue">false</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=003BE30CF6D5AE49A6B59964558526CE/Scope/=8DA3E67C498024418EB9D4F3EABB22BF/@KeyIndexDefined">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=003BE30CF6D5AE49A6B59964558526CE/Scope/=8DA3E67C498024418EB9D4F3EABB22BF/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=003BE30CF6D5AE49A6B59964558526CE/Scope/=8DA3E67C498024418EB9D4F3EABB22BF/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=003BE30CF6D5AE49A6B59964558526CE/Shortcut/@EntryValue">wdmc34</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=003BE30CF6D5AE49A6B59964558526CE/ShortenQualifiedReferences/@EntryValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=003BE30CF6D5AE49A6B59964558526CE/Text/@EntryValue">foreach (var item in request.Items)
+{
+    order.AddItem(item.Name, item.Quantity, (decimal)item.Price);
+}
+
+$END$</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0270EBF1243482458FBAC812BACA1CA9/@KeyIndexDefined">true</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0270EBF1243482458FBAC812BACA1CA9/Applicability/=Live/@EntryIndexedValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0270EBF1243482458FBAC812BACA1CA9/Categories/=_005BWebDev_0020Masterclass_005D/@EntryIndexedValue">[WebDev Masterclass]</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0270EBF1243482458FBAC812BACA1CA9/Description/@EntryValue">Add Product DTO</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0270EBF1243482458FBAC812BACA1CA9/Reformat/@EntryValue">false</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0270EBF1243482458FBAC812BACA1CA9/Scope/=74F438531B14714D976E36A73DE74689/@KeyIndexDefined">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0270EBF1243482458FBAC812BACA1CA9/Scope/=74F438531B14714D976E36A73DE74689/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0270EBF1243482458FBAC812BACA1CA9/Scope/=74F438531B14714D976E36A73DE74689/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0270EBF1243482458FBAC812BACA1CA9/Shortcut/@EntryValue">wdmc16</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0270EBF1243482458FBAC812BACA1CA9/ShortenQualifiedReferences/@EntryValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0270EBF1243482458FBAC812BACA1CA9/Text/@EntryValue">public record Product(int Id,
+                      string Name,
+                      string Description,
+                      decimal Price,
+                      bool IsFeatured,
+                      string ThumbnailUrl,
+                      string ImageUrl);</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=07A01FC792AA964AADDB6A60141B6713/@KeyIndexDefined">true</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=07A01FC792AA964AADDB6A60141B6713/Applicability/=Live/@EntryIndexedValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=07A01FC792AA964AADDB6A60141B6713/Categories/=_005BWebDev_0020Masterclass_005D/@EntryIndexedValue">[WebDev Masterclass]</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=07A01FC792AA964AADDB6A60141B6713/Description/@EntryValue">Add ShoppingCartItem DTO</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=07A01FC792AA964AADDB6A60141B6713/Reformat/@EntryValue">false</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=07A01FC792AA964AADDB6A60141B6713/Scope/=001B521FD7AB644591ACF6032147FAE7/@KeyIndexDefined">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=07A01FC792AA964AADDB6A60141B6713/Scope/=001B521FD7AB644591ACF6032147FAE7/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=07A01FC792AA964AADDB6A60141B6713/Scope/=001B521FD7AB644591ACF6032147FAE7/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=07A01FC792AA964AADDB6A60141B6713/Shortcut/@EntryValue">wdmc17</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=07A01FC792AA964AADDB6A60141B6713/ShortenQualifiedReferences/@EntryValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=07A01FC792AA964AADDB6A60141B6713/Text/@EntryValue">public class ShoppingCartItem
+{
+    public int ProductId { get; set; }
+    public string ProductName { get; set; } = string.Empty;
+    public decimal Price { get; set; }
+    public int Quantity { get; set; }
+}</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=08B1A6221E3DEC42B94D22B8B070CA21/@KeyIndexDefined">true</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=08B1A6221E3DEC42B94D22B8B070CA21/Applicability/=Live/@EntryIndexedValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=08B1A6221E3DEC42B94D22B8B070CA21/Categories/=_005BWebDev_0020Masterclass_005D/@EntryIndexedValue">[WebDev Masterclass]</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=08B1A6221E3DEC42B94D22B8B070CA21/Description/@EntryValue">Add In-Memory config</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=08B1A6221E3DEC42B94D22B8B070CA21/Reformat/@EntryValue">false</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=08B1A6221E3DEC42B94D22B8B070CA21/Scope/=19194D0F1785254A9073A4CB816A4BCA/@KeyIndexDefined">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=08B1A6221E3DEC42B94D22B8B070CA21/Scope/=19194D0F1785254A9073A4CB816A4BCA/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=08B1A6221E3DEC42B94D22B8B070CA21/Scope/=19194D0F1785254A9073A4CB816A4BCA/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=08B1A6221E3DEC42B94D22B8B070CA21/Shortcut/@EntryValue">wdmc05</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=08B1A6221E3DEC42B94D22B8B070CA21/ShortenQualifiedReferences/@EntryValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=08B1A6221E3DEC42B94D22B8B070CA21/Text/@EntryValue">services.AddDbContext&lt;ProductsContext&gt;((svc, options) =&gt; {
+    var config = svc.GetRequiredService&lt;IConfiguration&gt;();
+    options.UseSqlServer(config.GetConnectionString("WebDevMasterClass-Products"));
+});</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=19923E44F56C1B4292FDCEE5D91EBD1A/@KeyIndexDefined">true</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=19923E44F56C1B4292FDCEE5D91EBD1A/Applicability/=Live/@EntryIndexedValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=19923E44F56C1B4292FDCEE5D91EBD1A/Categories/=_005BWebDev_0020Masterclass_005D/@EntryIndexedValue">[WebDev Masterclass]</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=19923E44F56C1B4292FDCEE5D91EBD1A/Description/@EntryValue">Add Event Entity</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=19923E44F56C1B4292FDCEE5D91EBD1A/Reformat/@EntryValue">false</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=19923E44F56C1B4292FDCEE5D91EBD1A/Scope/=6BE164CAC3DED344844062E498F92AB8/@KeyIndexDefined">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=19923E44F56C1B4292FDCEE5D91EBD1A/Scope/=6BE164CAC3DED344844062E498F92AB8/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=19923E44F56C1B4292FDCEE5D91EBD1A/Scope/=6BE164CAC3DED344844062E498F92AB8/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=19923E44F56C1B4292FDCEE5D91EBD1A/Shortcut/@EntryValue">wdmc54</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=19923E44F56C1B4292FDCEE5D91EBD1A/ShortenQualifiedReferences/@EntryValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=19923E44F56C1B4292FDCEE5D91EBD1A/Text/@EntryValue">namespace WebDevMasterClass.Services.Orders.Entities;
+
+internal class Event
+{
+    public int Id { get; set; }
+    public EventType Type { get; set; }
+    public DateTimeOffset Date { get; set; }
+    public string Data { get; set; } = string.Empty;
+    public EventState State { get; set; }
+}
+
+public enum EventType
+{
+    OrderCreated
+}
+
+public enum EventState
+{
+    Pending,
+    Handled
+}</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1A4BA1C6295E2D46A447CD90DCF1D8AA/@KeyIndexDefined">true</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1A4BA1C6295E2D46A447CD90DCF1D8AA/Applicability/=Live/@EntryIndexedValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1A4BA1C6295E2D46A447CD90DCF1D8AA/Categories/=_005BWebDev_0020Masterclass_005D/@EntryIndexedValue">[WebDev Masterclass]</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1A4BA1C6295E2D46A447CD90DCF1D8AA/Description/@EntryValue">Add Orders Entities</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1A4BA1C6295E2D46A447CD90DCF1D8AA/Reformat/@EntryValue">false</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1A4BA1C6295E2D46A447CD90DCF1D8AA/Scope/=0329FBBDF5D6F74B9BF3DDE49704C466/@KeyIndexDefined">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1A4BA1C6295E2D46A447CD90DCF1D8AA/Scope/=0329FBBDF5D6F74B9BF3DDE49704C466/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1A4BA1C6295E2D46A447CD90DCF1D8AA/Scope/=0329FBBDF5D6F74B9BF3DDE49704C466/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1A4BA1C6295E2D46A447CD90DCF1D8AA/Shortcut/@EntryValue">wdmc28</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1A4BA1C6295E2D46A447CD90DCF1D8AA/ShortenQualifiedReferences/@EntryValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1A4BA1C6295E2D46A447CD90DCF1D8AA/Text/@EntryValue">namespace WebDevMasterClass.Services.Orders.Entities;
+
+public class Order
+{
+    private List&lt;OrderItem&gt; _items = new();
+    private List&lt;Address&gt; _addresses = new();
+
+#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
+    private Order() { } // For EF Core
+#pragma warning restore CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
+
+    private Order(string orderId, DeliveryAddress invoiceAddress, BillingAddress billingAddress, DateTimeOffset orderDate)
+    {
+        OrderId = orderId;
+        _addresses.Add(invoiceAddress);
+        _addresses.Add(billingAddress);
+        OrderDate = orderDate;
+    }
+
+    public static Order Create(DeliveryAddress deliveryAddress, BillingAddress billingAddress) 
+        =&gt; new Order(GenerateOrderId(), deliveryAddress, billingAddress, DateTimeOffset.Now);
+
+    public OrderItem AddItem(string name, int quantity, decimal price)
+    {
+        var item = OrderItem.Create(_items.Count + 1, name, quantity, price);
+        _items.Add(item);
+        Total += item.Price * item.Quantity;
+        return item;
+    }
+
+    private static string GenerateOrderId()
+    {
+        return Guid.NewGuid().ToString("N").Substring(0, 16).ToUpper();
+    }
+
+    public string OrderId { get; private set; }
+    public DateTimeOffset OrderDate { get; private set; }
+    public decimal Total { get; private set; }
+    public DeliveryAddress DeliveryAddress =&gt; _addresses.OfType&lt;DeliveryAddress&gt;().First();
+    public BillingAddress BillingAddress =&gt; _addresses.OfType&lt;BillingAddress&gt;().First();
+    public OrderItem[] Items =&gt; _items.ToArray();
+}
+
+public class OrderItem
+{
+    private int id;
+
+#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
+    private OrderItem() { } // For EF Core
+#pragma warning restore CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
+
+    private OrderItem(int id, string name, int quantity, decimal price)
+    {
+        this.id = id;
+        Name = name;
+        Quantity = quantity;
+        Price = price;
+    }
+
+    internal static OrderItem Create(int id, string name, int quantity, decimal price) =&gt; new OrderItem(id, name, quantity, price);
+
+    public string Name { get; set; }
+    public int Quantity { get; set; }
+    public decimal Price { get; set; }
+}
+
+public abstract class Address
+{
+#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
+    protected Address() {} // For EF Core
+#pragma warning restore CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
+
+    protected Address(string name, string street1, string? street2, 
+                    string postalCode, string city, string country)
+    {
+        Name = name;
+        Street1 = street1;
+        Street2 = street2;
+        PostalCode = postalCode;
+        City = city;
+        Country = country;
+    }
+
+    public string Name { get; private set; }
+    public string Street1 { get; private set; }
+    public string? Street2 { get; private set; }
+    public string PostalCode { get; private set; }
+    public string City { get; private set; }
+    public string Country { get; private set; }
+}
+
+public class BillingAddress : Address
+{
+    private BillingAddress() { } // For EF Core
+    private BillingAddress(string name, string street1, string? street2,
+                        string postalCode, string city, string country)
+        : base(name, street1, street2, postalCode, city, country)
+    {
+    }
+
+    public static BillingAddress Create(string name, string street1, string? street2,
+                        string postalCode, string city, string country)
+        =&gt; new BillingAddress(name, street1, street2, postalCode, city, country);
+}
+public class DeliveryAddress : Address
+{
+    private DeliveryAddress() { } // For EF Core
+    private DeliveryAddress(string name, string street1, string? street2,
+                        string postalCode, string city, string country)
+        : base(name, street1, street2, postalCode, city, country)
+    {
+    }
+
+    public static DeliveryAddress Create(string name, string street1, string? street2,
+                        string postalCode, string city, string country)
+        =&gt; new DeliveryAddress(name, street1, street2, postalCode, city, country);
+}</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1CE181148FDBAE4D922F7EC2153FF5B7/@KeyIndexDefined">true</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1CE181148FDBAE4D922F7EC2153FF5B7/Applicability/=Live/@EntryIndexedValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1CE181148FDBAE4D922F7EC2153FF5B7/Categories/=_005BWebDev_0020Masterclass_005D/@EntryIndexedValue">[WebDev Masterclass]</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1CE181148FDBAE4D922F7EC2153FF5B7/Description/@EntryValue">Add Address Mapping</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1CE181148FDBAE4D922F7EC2153FF5B7/Reformat/@EntryValue">false</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1CE181148FDBAE4D922F7EC2153FF5B7/Scope/=D1361DF7CE6D8E42BF46051C0F414C64/@KeyIndexDefined">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1CE181148FDBAE4D922F7EC2153FF5B7/Scope/=D1361DF7CE6D8E42BF46051C0F414C64/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1CE181148FDBAE4D922F7EC2153FF5B7/Scope/=D1361DF7CE6D8E42BF46051C0F414C64/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1CE181148FDBAE4D922F7EC2153FF5B7/Shortcut/@EntryValue">wdmc32</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1CE181148FDBAE4D922F7EC2153FF5B7/ShortenQualifiedReferences/@EntryValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1CE181148FDBAE4D922F7EC2153FF5B7/Text/@EntryValue">modelBuilder.Entity&lt;Address&gt;(x =&gt;
+{
+    x.ToTable("Addresses");
+
+    x.Property&lt;int&gt;("Id");
+    x.Property&lt;int&gt;("OrderId");
+    x.Property&lt;string&gt;("AddressType");
+
+    x.HasDiscriminator&lt;string&gt;("AddressType")
+          .HasValue&lt;BillingAddress&gt;("Billing")
+          .HasValue&lt;DeliveryAddress&gt;("Delivery");
+
+    x.HasKey("Id");
+});$END$</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1D13EAD9EB09324981141386C243EE37/@KeyIndexDefined">true</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1D13EAD9EB09324981141386C243EE37/Applicability/=Live/@EntryIndexedValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1D13EAD9EB09324981141386C243EE37/Categories/=_005BWebDev_0020Masterclass_005D/@EntryIndexedValue">[WebDev Masterclass]</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1D13EAD9EB09324981141386C243EE37/Description/@EntryValue">Add gRPC test implementation pt 1</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1D13EAD9EB09324981141386C243EE37/Reformat/@EntryValue">false</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1D13EAD9EB09324981141386C243EE37/Scope/=E4B0FE21E0D8F14382B8FE18ADA91E96/@KeyIndexDefined">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1D13EAD9EB09324981141386C243EE37/Scope/=E4B0FE21E0D8F14382B8FE18ADA91E96/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1D13EAD9EB09324981141386C243EE37/Scope/=E4B0FE21E0D8F14382B8FE18ADA91E96/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1D13EAD9EB09324981141386C243EE37/Shortcut/@EntryValue">wdmc39</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1D13EAD9EB09324981141386C243EE37/ShortenQualifiedReferences/@EntryValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1D13EAD9EB09324981141386C243EE37/Text/@EntryValue">var app = new WebApplicationFactory&lt;TProgram&gt;()
+                .WithWebHostBuilder(builder =&gt;
+                {
+                    builder.UseEnvironment("IntegrationTesting");
+
+                    builder.ConfigureTestServices(services =&gt;
+                    {
+                        var dbDescriptor = services.First(x =&gt; x.ServiceType == typeof(TDbContext));
+                        var optionsDescriptor = services.First(x =&gt; x.ServiceType == typeof(DbContextOptions&lt;TDbContext&gt;));
+
+                        services.Remove(dbDescriptor);
+                        services.Remove(optionsDescriptor);
+
+                        var config = services.BuildServiceProvider().GetRequiredService&lt;IConfiguration&gt;();
+
+                        services.AddDbContext&lt;TDbContext&gt;((svc, options) =&gt;
+                        {
+                            options.UseSqlServer(config.GetConnectionString("Sql"), opts =&gt;
+                            {
+                                opts.ExecutionStrategy(x =&gt; new NonRetryingExecutionStrategy(x));
+                            });
+                        }, ServiceLifetime.Singleton);
+                    });
+                });
+$END$</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=207700E6034A0747988F2B9168BD54E3/@KeyIndexDefined">true</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=207700E6034A0747988F2B9168BD54E3/Applicability/=Live/@EntryIndexedValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=207700E6034A0747988F2B9168BD54E3/Categories/=_005BWebDev_0020Masterclass_005D/@EntryIndexedValue">[WebDev Masterclass]</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=207700E6034A0747988F2B9168BD54E3/Description/@EntryValue">Add gRPC test outline</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=207700E6034A0747988F2B9168BD54E3/Reformat/@EntryValue">false</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=207700E6034A0747988F2B9168BD54E3/Scope/=C93E8150D197DA40AC63A41560DEDB43/@KeyIndexDefined">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=207700E6034A0747988F2B9168BD54E3/Scope/=C93E8150D197DA40AC63A41560DEDB43/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=207700E6034A0747988F2B9168BD54E3/Scope/=C93E8150D197DA40AC63A41560DEDB43/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=207700E6034A0747988F2B9168BD54E3/Shortcut/@EntryValue">wdmc38</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=207700E6034A0747988F2B9168BD54E3/ShortenQualifiedReferences/@EntryValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=207700E6034A0747988F2B9168BD54E3/Text/@EntryValue">public static async Task ExecuteTest&lt;TProgram, TDbContext, TGrpcService&gt;(
+        Func&lt;TGrpcService, Task&gt; test,
+        Func&lt;DbCommand, Task&gt;? dbConfig = null,
+        Func&lt;DbCommand, Task&gt;? validateDb = null
+    )
+        where TProgram : class
+        where TDbContext : DbContext
+        where TGrpcService : Grpc.Core.ClientBase
+{
+    $END$
+}</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=21606BFCB6258042AE884537EC8CCBA5/@KeyIndexDefined">true</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=21606BFCB6258042AE884537EC8CCBA5/Applicability/=Live/@EntryIndexedValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=21606BFCB6258042AE884537EC8CCBA5/Categories/=_005BWebDev_0020Masterclass_005D/@EntryIndexedValue">[WebDev Masterclass]</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=21606BFCB6258042AE884537EC8CCBA5/Description/@EntryValue">Map Addresses</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=21606BFCB6258042AE884537EC8CCBA5/Reformat/@EntryValue">false</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=21606BFCB6258042AE884537EC8CCBA5/Scope/=EF8804DF126B9A4383045E518D3DA27F/@KeyIndexDefined">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=21606BFCB6258042AE884537EC8CCBA5/Scope/=EF8804DF126B9A4383045E518D3DA27F/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=21606BFCB6258042AE884537EC8CCBA5/Scope/=EF8804DF126B9A4383045E518D3DA27F/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=21606BFCB6258042AE884537EC8CCBA5/Shortcut/@EntryValue">wdmc33</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=21606BFCB6258042AE884537EC8CCBA5/ShortenQualifiedReferences/@EntryValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=21606BFCB6258042AE884537EC8CCBA5/Text/@EntryValue">var deliveryAddress = WebDevMasterClass.Services.Orders.Entities.DeliveryAddress.Create(request.DeliveryAddress.Name, 
+                                                    request.DeliveryAddress.Street1, 
+                                                    request.DeliveryAddress.Street2, 
+                                                    request.DeliveryAddress.PostalCode, 
+                                                    request.DeliveryAddress.City, 
+                                                    request.DeliveryAddress.Country);
+
+var billingAddress = WebDevMasterClass.Services.Orders.Entities.BillingAddress.Create(request.BillingAddress.Name,
+                                            request.BillingAddress.Street1,
+                                            request.BillingAddress.Street2,
+                                            request.BillingAddress.PostalCode,
+                                            request.BillingAddress.City,
+                                            request.BillingAddress.Country);
+
+$END$</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=257BD14EC99F314F9A3153EBB4D84B9D/@KeyIndexDefined">true</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=257BD14EC99F314F9A3153EBB4D84B9D/Applicability/=Live/@EntryIndexedValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=257BD14EC99F314F9A3153EBB4D84B9D/Categories/=_005BWebDev_0020Masterclass_005D/@EntryIndexedValue">[WebDev Masterclass]</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=257BD14EC99F314F9A3153EBB4D84B9D/Description/@EntryValue">Add OrderItems</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=257BD14EC99F314F9A3153EBB4D84B9D/Reformat/@EntryValue">false</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=257BD14EC99F314F9A3153EBB4D84B9D/Scope/=25385A1C1E5D2C428A4C3C96BE0B566F/@KeyIndexDefined">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=257BD14EC99F314F9A3153EBB4D84B9D/Scope/=25385A1C1E5D2C428A4C3C96BE0B566F/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=257BD14EC99F314F9A3153EBB4D84B9D/Scope/=25385A1C1E5D2C428A4C3C96BE0B566F/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=257BD14EC99F314F9A3153EBB4D84B9D/Shortcut/@EntryValue">wdmc49</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=257BD14EC99F314F9A3153EBB4D84B9D/ShortenQualifiedReferences/@EntryValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=257BD14EC99F314F9A3153EBB4D84B9D/Text/@EntryValue">foreach (var item in order.Items)
+{
+    var product = retrievedProducts.First(x =&gt; x.Id == item.ItemId);
+    request.Items.Add(new OrderItem
+    {
+        Name = product.Name,
+        Price = (float)product.Price,
+        Quantity = item.Quantity
+    });
+}
+
+$END$</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2AC98685861315469A6A6844D61CB632/@KeyIndexDefined">true</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2AC98685861315469A6A6844D61CB632/Applicability/=Live/@EntryIndexedValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2AC98685861315469A6A6844D61CB632/Categories/=_005BWebDev_0020Masterclass_005D/@EntryIndexedValue">[WebDev Masterclass]</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2AC98685861315469A6A6844D61CB632/Description/@EntryValue">Add Order Mapping</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2AC98685861315469A6A6844D61CB632/Reformat/@EntryValue">false</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2AC98685861315469A6A6844D61CB632/Scope/=6DE01B246C11F449BBC21764058E2908/@KeyIndexDefined">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2AC98685861315469A6A6844D61CB632/Scope/=6DE01B246C11F449BBC21764058E2908/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2AC98685861315469A6A6844D61CB632/Scope/=6DE01B246C11F449BBC21764058E2908/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2AC98685861315469A6A6844D61CB632/Shortcut/@EntryValue">wdmc30</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2AC98685861315469A6A6844D61CB632/ShortenQualifiedReferences/@EntryValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2AC98685861315469A6A6844D61CB632/Text/@EntryValue">modelBuilder.Entity&lt;WebDevMasterClass.Services.Orders.Entities.Order&gt;(x =&gt;
+{
+    x.ToTable("Orders");
+
+    x.Property&lt;int&gt;("Id");
+
+    x.HasMany&lt;OrderItem&gt;("_items").WithOne().HasForeignKey("OrderId").IsRequired();
+    x.HasMany&lt;Address&gt;("_addresses").WithOne().HasForeignKey("OrderId").IsRequired();
+
+    x.Ignore(x =&gt; x.Items);
+
+    x.HasKey("Id");
+});$END$</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=31AD50782B0B9E43ADCBEB418931639C/@KeyIndexDefined">true</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=31AD50782B0B9E43ADCBEB418931639C/Applicability/=Live/@EntryIndexedValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=31AD50782B0B9E43ADCBEB418931639C/Categories/=_005BWebDev_0020Masterclass_005D/@EntryIndexedValue">[WebDev Masterclass]</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=31AD50782B0B9E43ADCBEB418931639C/Description/@EntryValue">Add Orders test outline</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=31AD50782B0B9E43ADCBEB418931639C/Reformat/@EntryValue">false</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=31AD50782B0B9E43ADCBEB418931639C/Scope/=A79F5E0F004B5B4ABB2A3D247841DC2B/@KeyIndexDefined">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=31AD50782B0B9E43ADCBEB418931639C/Scope/=A79F5E0F004B5B4ABB2A3D247841DC2B/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=31AD50782B0B9E43ADCBEB418931639C/Scope/=A79F5E0F004B5B4ABB2A3D247841DC2B/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=31AD50782B0B9E43ADCBEB418931639C/Shortcut/@EntryValue">wdmc41</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=31AD50782B0B9E43ADCBEB418931639C/ShortenQualifiedReferences/@EntryValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=31AD50782B0B9E43ADCBEB418931639C/Text/@EntryValue">=&gt; WebDevMasterClass.Testing.TestHelper.ExecuteTest&lt;Program, OrdersContext, WebDevMasterClass.Services.Orders.gRPC.OrdersService.OrdersServiceClient&gt;(
+      test: async client =&gt;
+      {
+
+      });</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3995D26B6B689749A331DB34155B19E4/@KeyIndexDefined">true</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3995D26B6B689749A331DB34155B19E4/Applicability/=Live/@EntryIndexedValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3995D26B6B689749A331DB34155B19E4/Categories/=_005BWebDev_0020Masterclass_005D/@EntryIndexedValue">[WebDev Masterclass]</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3995D26B6B689749A331DB34155B19E4/Description/@EntryValue">Validate that test order was added to Db</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3995D26B6B689749A331DB34155B19E4/Reformat/@EntryValue">false</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3995D26B6B689749A331DB34155B19E4/Scope/=E5842B22F987264FA33E2804D69A320C/@KeyIndexDefined">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3995D26B6B689749A331DB34155B19E4/Scope/=E5842B22F987264FA33E2804D69A320C/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3995D26B6B689749A331DB34155B19E4/Scope/=E5842B22F987264FA33E2804D69A320C/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3995D26B6B689749A331DB34155B19E4/Shortcut/@EntryValue">wdmc45</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3995D26B6B689749A331DB34155B19E4/ShortenQualifiedReferences/@EntryValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3995D26B6B689749A331DB34155B19E4/Text/@EntryValue">extern alias SERVER; 
+
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Xunit.Abstractions;
+using Xunit.Sdk;
+using OrdersServer = SERVER::WebDevMasterClass.Services.Orders;
+
+[assembly: TestFramework("WebDevMasterClass.Services.Orders.Tests.Infrastructure.TestRunStart", "WebDevMasterClass.Services.Orders.Tests")]
+
+namespace WebDevMasterClass.Services.Orders.Tests.Infrastructure;
+
+public class TestRunStart : XunitTestFramework
+{
+    public TestRunStart(IMessageSink messageSink) : base(messageSink)
+    {
+        var config = new ConfigurationManager()
+                    .AddJsonFile("appSettings.IntegrationTesting.json")
+                    .Build();
+
+        var options = new DbContextOptionsBuilder&lt;OrdersServer.Data.OrdersContext&gt;()
+                        .UseSqlServer(config.GetConnectionString("Sql"));
+
+        var dbContext = new OrdersServer.Data.OrdersContext(options.Options);
+
+        dbContext.Database.Migrate();
+    }
+}</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3A6381AEDD98104BBC15F604BF6709E2/@KeyIndexDefined">true</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3A6381AEDD98104BBC15F604BF6709E2/Applicability/=Live/@EntryIndexedValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3A6381AEDD98104BBC15F604BF6709E2/Categories/=_005BWebDev_0020Masterclass_005D/@EntryIndexedValue">[WebDev Masterclass]</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3A6381AEDD98104BBC15F604BF6709E2/Description/@EntryValue">Add Initial Migration Up</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3A6381AEDD98104BBC15F604BF6709E2/Reformat/@EntryValue">true</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3A6381AEDD98104BBC15F604BF6709E2/Scope/=DB45C5A9AE0DF74A8FDCBF3CFEE18310/@KeyIndexDefined">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3A6381AEDD98104BBC15F604BF6709E2/Scope/=DB45C5A9AE0DF74A8FDCBF3CFEE18310/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3A6381AEDD98104BBC15F604BF6709E2/Scope/=DB45C5A9AE0DF74A8FDCBF3CFEE18310/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3A6381AEDD98104BBC15F604BF6709E2/Shortcut/@EntryValue">wdmc02</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3A6381AEDD98104BBC15F604BF6709E2/ShortenQualifiedReferences/@EntryValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3A6381AEDD98104BBC15F604BF6709E2/Text/@EntryValue">builder.CreateTable(
+    name: "Products",
+    columns: table =&gt; new {
+        Id = table.Column&lt;int&gt;().Annotation("SqlServer:Identity", "1, 1"),
+        Name = table.Column&lt;string&gt;(maxLength: 128),
+        Description = table.Column&lt;string&gt;(),
+        Price = table.Column&lt;decimal&gt;(),
+        IsFeatured = table.Column&lt;bool&gt;(),
+        ThumbnailUrl = table.Column&lt;string&gt;(),
+        ImageUrl = table.Column&lt;string&gt;(),
+    },
+    constraints: table =&gt;
+    {
+        table.PrimaryKey("PK_Products", x =&gt; x.Id);
+    }
+);</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3F0704C1A32FB54EB5140085CF893D16/@KeyIndexDefined">true</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3F0704C1A32FB54EB5140085CF893D16/Applicability/=Live/@EntryIndexedValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3F0704C1A32FB54EB5140085CF893D16/Categories/=_005BWebDev_0020Masterclass_005D/@EntryIndexedValue">[WebDev Masterclass]</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3F0704C1A32FB54EB5140085CF893D16/Description/@EntryValue">Add OpenID Connect configuration</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3F0704C1A32FB54EB5140085CF893D16/Reformat/@EntryValue">false</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3F0704C1A32FB54EB5140085CF893D16/Scope/=2AFA00DDC77CFE478C68804DC173970B/@KeyIndexDefined">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3F0704C1A32FB54EB5140085CF893D16/Scope/=2AFA00DDC77CFE478C68804DC173970B/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3F0704C1A32FB54EB5140085CF893D16/Scope/=2AFA00DDC77CFE478C68804DC173970B/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3F0704C1A32FB54EB5140085CF893D16/Shortcut/@EntryValue">wdmc25</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3F0704C1A32FB54EB5140085CF893D16/ShortenQualifiedReferences/@EntryValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3F0704C1A32FB54EB5140085CF893D16/Text/@EntryValue">options =&gt;
+{
+    options.Authority = builder.Configuration["IdentityServer:Url"];
+
+    options.ClientId = "interactive.mvc.sample";
+    options.ClientSecret = "secret";
+
+    options.ResponseType = "code";
+    options.UsePkce = true;
+
+    options.GetClaimsFromUserInfoEndpoint = true;
+    options.SaveTokens = true;
+    options.MapInboundClaims = false;
+    options.DisableTelemetry = true;
+
+    options.TokenValidationParameters = new()
+    {
+        NameClaimType = "name",
+        RoleClaimType = "role"
+    };
+}</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=407DFEE1BBEF7441AAAA5ABF632D9C75/@KeyIndexDefined">true</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=407DFEE1BBEF7441AAAA5ABF632D9C75/Applicability/=Live/@EntryIndexedValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=407DFEE1BBEF7441AAAA5ABF632D9C75/Categories/=_005BWebDev_0020Masterclass_005D/@EntryIndexedValue">[WebDev Masterclass]</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=407DFEE1BBEF7441AAAA5ABF632D9C75/Description/@EntryValue">Simplified grain test 2</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=407DFEE1BBEF7441AAAA5ABF632D9C75/Reformat/@EntryValue">false</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=407DFEE1BBEF7441AAAA5ABF632D9C75/Scope/=913AB73EE30E5746AB48F16912B5E0A4/@KeyIndexDefined">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=407DFEE1BBEF7441AAAA5ABF632D9C75/Scope/=913AB73EE30E5746AB48F16912B5E0A4/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=407DFEE1BBEF7441AAAA5ABF632D9C75/Scope/=913AB73EE30E5746AB48F16912B5E0A4/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=407DFEE1BBEF7441AAAA5ABF632D9C75/Shortcut/@EntryValue">wdmc23</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=407DFEE1BBEF7441AAAA5ABF632D9C75/ShortenQualifiedReferences/@EntryValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=407DFEE1BBEF7441AAAA5ABF632D9C75/Text/@EntryValue">{
+    var grainFake = A.Fake&lt;IShoppingCart&gt;();
+
+    return ExecuteTest(
+        serviceConfig: (grainFactory, productsClient) =&gt;
+        {
+            A.CallTo(() =&gt; grainFactory.GetGrain&lt;IShoppingCart&gt;("TestCart", null)).Returns(grainFake);
+
+            A.CallTo(() =&gt; productsClient.GetProduct(1)).Returns(
+                new Product(1, "Test Product", "A Test Product", 1.23m, false, "thumbnail.jpg", "image.jpg")
+            );
+        },
+        test: async client =&gt;
+        {
+            client.DefaultRequestHeaders.Add("Cookie", "ShoppingCartId=TestCart");
+            var response = await client.PostAsJsonAsync("/api/shopping-cart", new { ProductId = 1, Count = 1 });
+
+            response.EnsureSuccessStatusCode();
+
+            A.CallTo(() =&gt; grainFake.AddItem(A&lt;ShoppingCartItem&gt;
+                                    .That.Matches(x =&gt; x.ProductId == 1 &amp;&amp; x.Price == 1.23m &amp;&amp; x.Count == 1)))
+                                    .MustHaveHappenedOnceExactly();
+        }
+    );
+}</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=41F1C222DEE4444AA418EF9F63E130A0/@KeyIndexDefined">true</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=41F1C222DEE4444AA418EF9F63E130A0/Applicability/=Live/@EntryIndexedValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=41F1C222DEE4444AA418EF9F63E130A0/Categories/=_005BWebDev_0020Masterclass_005D/@EntryIndexedValue">[WebDev Masterclass]</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=41F1C222DEE4444AA418EF9F63E130A0/Description/@EntryValue">Create GrainFactory Fake</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=41F1C222DEE4444AA418EF9F63E130A0/Reformat/@EntryValue">false</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=41F1C222DEE4444AA418EF9F63E130A0/Scope/=1AFC035FBBA4E9418D3EC4D9528B2805/@KeyIndexDefined">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=41F1C222DEE4444AA418EF9F63E130A0/Scope/=1AFC035FBBA4E9418D3EC4D9528B2805/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=41F1C222DEE4444AA418EF9F63E130A0/Scope/=1AFC035FBBA4E9418D3EC4D9528B2805/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=41F1C222DEE4444AA418EF9F63E130A0/Shortcut/@EntryValue">wdmc19</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=41F1C222DEE4444AA418EF9F63E130A0/ShortenQualifiedReferences/@EntryValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=41F1C222DEE4444AA418EF9F63E130A0/Text/@EntryValue">var grainFake = FakeItEasy.A.Fake&lt;IShoppingCart&gt;();
+A.CallTo(() =&gt; grainFake.GetItems()).Returns([ new WebDevMasterClass.Web.ShoppingCart.ShoppingCartItem {
+            ProductId = 1,
+            ProductName = "Test Product",
+            Count = 1,
+            Price = 1.23m
+        }]);
+    
+var grainFactoryFake = A.Fake&lt;IGrainFactory&gt;();
+A.CallTo(() =&gt; grainFactoryFake.GetGrain&lt;IShoppingCart&gt;("TestCart", null)).Returns(grainFake);</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=488B2F6DAD12B442BC93C19233B6EBCE/@KeyIndexDefined">true</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=488B2F6DAD12B442BC93C19233B6EBCE/Applicability/=Live/@EntryIndexedValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=488B2F6DAD12B442BC93C19233B6EBCE/Categories/=_005BWebDev_0020Masterclass_005D/@EntryIndexedValue">[WebDev Masterclass]</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=488B2F6DAD12B442BC93C19233B6EBCE/Description/@EntryValue">Add Event Test</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=488B2F6DAD12B442BC93C19233B6EBCE/Reformat/@EntryValue">false</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=488B2F6DAD12B442BC93C19233B6EBCE/Scope/=321B06AE4655DD4A8F4471BB9137C0A8/@KeyIndexDefined">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=488B2F6DAD12B442BC93C19233B6EBCE/Scope/=321B06AE4655DD4A8F4471BB9137C0A8/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=488B2F6DAD12B442BC93C19233B6EBCE/Scope/=321B06AE4655DD4A8F4471BB9137C0A8/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=488B2F6DAD12B442BC93C19233B6EBCE/Shortcut/@EntryValue">wdmc57</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=488B2F6DAD12B442BC93C19233B6EBCE/ShortenQualifiedReferences/@EntryValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=488B2F6DAD12B442BC93C19233B6EBCE/Text/@EntryValue">[Fact]
+public Task Generates_an_event()
+    =&gt; TestHelper.ExecuteTest&lt;SERVER::Program, OrdersService.Data.OrdersContext, gRPC.OrdersService.OrdersServiceClient&gt;(async client =&gt;
+    {
+        var request = new AddOrderRequest
+        {
+            DeliveryAddress = new Address
+            {
+                Name = "Chris Klug",
+                Street1 = "Teststreet 1",
+                Street2 = "",
+                PostalCode = "12345",
+                City = "Stockholm",
+                Country = "Sweden"
+            },
+            BillingAddress = new Address
+            {
+                Name = "John Doe",
+                Street1 = "Somestreet 1",
+                Street2 = "",
+                PostalCode = "56789",
+                City = "Whoville",
+                Country = "Denmark"
+            }
+        };
+
+        var response = await client.AddOrderAsync(request);
+
+    }, validateDb: async cmd =&gt;
+    {
+        int id;
+        string orderId;
+        cmd.CommandText = "SELECT * FROM Orders";
+        using (var reader = await cmd.ExecuteReaderAsync())
+        {
+            reader.Read();
+            id = (int)reader["Id"];
+            orderId = (string)reader["OrderId"];
+        }
+        cmd.CommandText = "SELECT * FROM Events";
+        using (var reader = await cmd.ExecuteReaderAsync())
+        {
+            Assert.True(reader.Read());
+            Assert.Equal("OrderCreated", (string)reader["EventType"]);
+            Assert.Equal("Pending", (string)reader["State"]);
+            Assert.Equal(orderId, (string)reader["Data"]);
+            Assert.False(reader.Read());
+        }
+    });</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=4BE1CEBD7EF77140941CD322B761DBD0/@KeyIndexDefined">true</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=4BE1CEBD7EF77140941CD322B761DBD0/Applicability/=Live/@EntryIndexedValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=4BE1CEBD7EF77140941CD322B761DBD0/Categories/=_005BWebDev_0020Masterclass_005D/@EntryIndexedValue">[WebDev Masterclass]</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=4BE1CEBD7EF77140941CD322B761DBD0/Description/@EntryValue">Add TestFramework attribute</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=4BE1CEBD7EF77140941CD322B761DBD0/Reformat/@EntryValue">false</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=4BE1CEBD7EF77140941CD322B761DBD0/Scope/=37A080C6A44C3C44B3C635DC5D00FF34/@KeyIndexDefined">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=4BE1CEBD7EF77140941CD322B761DBD0/Scope/=37A080C6A44C3C44B3C635DC5D00FF34/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=4BE1CEBD7EF77140941CD322B761DBD0/Scope/=37A080C6A44C3C44B3C635DC5D00FF34/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=4BE1CEBD7EF77140941CD322B761DBD0/Shortcut/@EntryValue">wdmc12</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=4BE1CEBD7EF77140941CD322B761DBD0/ShortenQualifiedReferences/@EntryValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=4BE1CEBD7EF77140941CD322B761DBD0/Text/@EntryValue">[assembly: Xunit.TestFramework(
+    "WebDevMasterClass.Services.Products.Tests.Infrastructure.TestRunStart",
+    "WebDevMasterClass.Services.Products.Tests"
+)]</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=4EAD417B3FE2374EA080CCAC4FE357E1/@KeyIndexDefined">true</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=4EAD417B3FE2374EA080CCAC4FE357E1/Applicability/=Live/@EntryIndexedValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=4EAD417B3FE2374EA080CCAC4FE357E1/Categories/=_005BWebDev_0020Masterclass_005D/@EntryIndexedValue">[WebDev Masterclass]</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=4EAD417B3FE2374EA080CCAC4FE357E1/Description/@EntryValue">Add AddOrderModel</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=4EAD417B3FE2374EA080CCAC4FE357E1/Reformat/@EntryValue">false</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=4EAD417B3FE2374EA080CCAC4FE357E1/Scope/=4D2A86C7DFF4B745B672D9105CF455AD/@KeyIndexDefined">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=4EAD417B3FE2374EA080CCAC4FE357E1/Scope/=4D2A86C7DFF4B745B672D9105CF455AD/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=4EAD417B3FE2374EA080CCAC4FE357E1/Scope/=4D2A86C7DFF4B745B672D9105CF455AD/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=4EAD417B3FE2374EA080CCAC4FE357E1/Shortcut/@EntryValue">wdmc46</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=4EAD417B3FE2374EA080CCAC4FE357E1/ShortenQualifiedReferences/@EntryValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=4EAD417B3FE2374EA080CCAC4FE357E1/Text/@EntryValue">public class AddOrderModel
+{
+    public required Item[] Items { get; set; }
+    public required Address DeliveryAddress { get; set; }
+    public required Address BillingAddress { get; set; }
+
+    public class Item
+    {
+        public int ItemId { get; set; }
+        public int Quantity { get; set; }
+    }
+    
+    public class Address
+    {
+        public required string Name { get; set; }
+        public required string Street1 { get; set; }
+        public string? Street2 { get; set; }
+        public required string PostalCode { get; set; }
+        public required string City { get; set; }
+        public required string Country { get; set; }
+    }
+}</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=503324BA1F566042B321EB8EA8DAC2FE/@KeyIndexDefined">true</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=503324BA1F566042B321EB8EA8DAC2FE/Applicability/=Live/@EntryIndexedValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=503324BA1F566042B321EB8EA8DAC2FE/Categories/=_005BWebDev_0020Masterclass_005D/@EntryIndexedValue">[WebDev Masterclass]</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=503324BA1F566042B321EB8EA8DAC2FE/Description/@EntryValue">Add Products record</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=503324BA1F566042B321EB8EA8DAC2FE/Reformat/@EntryValue">true</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=503324BA1F566042B321EB8EA8DAC2FE/Scope/=360CE296B47A7E48A2D4CCDE31724662/@KeyIndexDefined">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=503324BA1F566042B321EB8EA8DAC2FE/Scope/=360CE296B47A7E48A2D4CCDE31724662/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=503324BA1F566042B321EB8EA8DAC2FE/Scope/=360CE296B47A7E48A2D4CCDE31724662/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=503324BA1F566042B321EB8EA8DAC2FE/Shortcut/@EntryValue">wdmc01</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=503324BA1F566042B321EB8EA8DAC2FE/ShortenQualifiedReferences/@EntryValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=503324BA1F566042B321EB8EA8DAC2FE/Text/@EntryValue">public record Product(int Id, 
+    string Name, 
+    string Description, 
+    decimal Price, 
+    bool IsFeatured, 
+    string ThumbnailUrl, 
+    string ImageUrl);</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=52CC688AC675BB48B0389B43DC21D440/@KeyIndexDefined">true</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=52CC688AC675BB48B0389B43DC21D440/Applicability/=Live/@EntryIndexedValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=52CC688AC675BB48B0389B43DC21D440/Categories/=_005BWebDev_0020Masterclass_005D/@EntryIndexedValue">[WebDev Masterclass]</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=52CC688AC675BB48B0389B43DC21D440/Description/@EntryValue">Add ShoppingCart write test</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=52CC688AC675BB48B0389B43DC21D440/Reformat/@EntryValue">false</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=52CC688AC675BB48B0389B43DC21D440/Scope/=E60538A6FF0E6545B20914CE11A06972/@KeyIndexDefined">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=52CC688AC675BB48B0389B43DC21D440/Scope/=E60538A6FF0E6545B20914CE11A06972/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=52CC688AC675BB48B0389B43DC21D440/Scope/=E60538A6FF0E6545B20914CE11A06972/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=52CC688AC675BB48B0389B43DC21D440/Shortcut/@EntryValue">wdmc20</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=52CC688AC675BB48B0389B43DC21D440/ShortenQualifiedReferences/@EntryValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=52CC688AC675BB48B0389B43DC21D440/Text/@EntryValue">public class AddShoppingCartItem
+{
+    [Fact]
+    public Task Adds_item_to_grain_with_id_from_ShoppingCartId_cookie()
+    {
+        var grainFake = A.Fake&lt;IShoppingCart&gt;();
+
+        var grainFactoryFake = A.Fake&lt;IGrainFactory&gt;();
+        A.CallTo(() =&gt; grainFactoryFake.GetGrain&lt;IShoppingCart&gt;("TestCart", null)).Returns(grainFake);
+
+        var productsClientFake = A.Fake&lt;WebDevMasterClass.Services.Products.ClientIProductsClient&gt;();
+        A.CallTo(() =&gt; productsClientFake.GetProduct(1)).Returns(
+            new Product(1, "Test Product", "A Test Product", 1.23m, false, "thumbnail.jpg", "image.jpg")
+        );
+
+        return TestHelper.ExecuteTest&lt;Program&gt;(
+            serviceConfig: services =&gt;
+            {
+                services.AddSingleton(grainFactoryFake);
+                services.AddSingleton(productsClientFake);
+            },
+            test: async client =&gt; {
+
+                client.DefaultRequestHeaders.Add("Cookie", "ShoppingCartId=TestCart");
+                var response = await client.PostAsJsonAsync("/api/shopping-cart", new { ProductId = 1, Count = 1 });
+
+                response.EnsureSuccessStatusCode();
+
+                A.CallTo(() =&gt; grainFake.AddItem(A&lt;ShoppingCartItem&gt;
+                                        .That.Matches(x =&gt; x.ProductId == 1 &amp;&amp; x.Price == 1.23m &amp;&amp; x.Count == 1)))
+                                        .MustHaveHappenedOnceExactly();
+            });
+    }
+}</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=56146E5CC47B7B43AFD0105A48763177/@KeyIndexDefined">true</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=56146E5CC47B7B43AFD0105A48763177/Applicability/=Live/@EntryIndexedValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=56146E5CC47B7B43AFD0105A48763177/Categories/=_005BWebDev_0020Masterclass_005D/@EntryIndexedValue">[WebDev Masterclass]</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=56146E5CC47B7B43AFD0105A48763177/Description/@EntryValue">Add ExecuteTest function</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=56146E5CC47B7B43AFD0105A48763177/Reformat/@EntryValue">false</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=56146E5CC47B7B43AFD0105A48763177/Scope/=367CCE4306756145A9A66CE2DE28D3D5/@KeyIndexDefined">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=56146E5CC47B7B43AFD0105A48763177/Scope/=367CCE4306756145A9A66CE2DE28D3D5/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=56146E5CC47B7B43AFD0105A48763177/Scope/=367CCE4306756145A9A66CE2DE28D3D5/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=56146E5CC47B7B43AFD0105A48763177/Shortcut/@EntryValue">wdmc21</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=56146E5CC47B7B43AFD0105A48763177/ShortenQualifiedReferences/@EntryValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=56146E5CC47B7B43AFD0105A48763177/Text/@EntryValue">protected static Task ExecuteTest(
+              Func&lt;HttpClient, Task&gt; test,
+              Action&lt;IGrainFactory, IProductsClient&gt; serviceConfig
+            )
+{
+  var grainFactoryFake = A.Fake&lt;IGrainFactory&gt;();
+  var productsClientFake = A.Fake&lt;IProductsClient&gt;();
+
+  serviceConfig(grainFactoryFake, productsClientFake);
+
+  return TestHelper.ExecuteTest&lt;Program&gt;(
+      serviceConfig: services =&gt;
+      {
+          services.AddSingleton(grainFactoryFake);
+          services.AddSingleton(productsClientFake);
+      },
+      test: test);
+}</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=5884C065B5F6544E8DD409A89BBD87D0/@KeyIndexDefined">true</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=5884C065B5F6544E8DD409A89BBD87D0/Applicability/=Live/@EntryIndexedValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=5884C065B5F6544E8DD409A89BBD87D0/Categories/=_005BWebDev_0020Masterclass_005D/@EntryIndexedValue">[WebDev Masterclass]</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=5884C065B5F6544E8DD409A89BBD87D0/Description/@EntryValue">Add OrdersService Failure Logging</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=5884C065B5F6544E8DD409A89BBD87D0/Reformat/@EntryValue">false</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=5884C065B5F6544E8DD409A89BBD87D0/Scope/=FE685EEA102D2149BE6151230A4EAAC8/@KeyIndexDefined">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=5884C065B5F6544E8DD409A89BBD87D0/Scope/=FE685EEA102D2149BE6151230A4EAAC8/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=5884C065B5F6544E8DD409A89BBD87D0/Scope/=FE685EEA102D2149BE6151230A4EAAC8/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=5884C065B5F6544E8DD409A89BBD87D0/Shortcut/@EntryValue">wdmc36</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=5884C065B5F6544E8DD409A89BBD87D0/ShortenQualifiedReferences/@EntryValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=5884C065B5F6544E8DD409A89BBD87D0/Text/@EntryValue">logger.LogError(ex, "Error adding order {orderId}", order.OrderId);$END$</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=65B0A7CE167BF74BB049A4B0E1709F65/@KeyIndexDefined">true</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=65B0A7CE167BF74BB049A4B0E1709F65/Applicability/=Live/@EntryIndexedValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=65B0A7CE167BF74BB049A4B0E1709F65/Categories/=_005BWebDev_0020Masterclass_005D/@EntryIndexedValue">[WebDev Masterclass]</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=65B0A7CE167BF74BB049A4B0E1709F65/Description/@EntryValue">Create test AddOrderRequest</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=65B0A7CE167BF74BB049A4B0E1709F65/Reformat/@EntryValue">false</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=65B0A7CE167BF74BB049A4B0E1709F65/Scope/=F25393B77E97DB4199441F6618527CE3/@KeyIndexDefined">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=65B0A7CE167BF74BB049A4B0E1709F65/Scope/=F25393B77E97DB4199441F6618527CE3/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=65B0A7CE167BF74BB049A4B0E1709F65/Scope/=F25393B77E97DB4199441F6618527CE3/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=65B0A7CE167BF74BB049A4B0E1709F65/Shortcut/@EntryValue">wdmc42</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=65B0A7CE167BF74BB049A4B0E1709F65/ShortenQualifiedReferences/@EntryValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=65B0A7CE167BF74BB049A4B0E1709F65/Text/@EntryValue">var request = new WebDevMasterClass.Services.Orders.gRPC.AddOrderRequest
+{
+    DeliveryAddress = new Address
+    {
+        Name = "Chris Klug",
+        Street1 = "Teststreet 1",
+        Street2 = "",
+        PostalCode = "12345",
+        City = "Stockholm",
+        Country = "Sweden"
+    },
+    BillingAddress = new Address
+    {
+        Name = "John Doe",
+        Street1 = "Somestreet 1",
+        Street2 = "",
+        PostalCode = "56789",
+        City = "Whoville",
+        Country = "Denmark"
+    }
+};
+$END$</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=65C591A2C3A02E45BA7DD98644D35DE4/@KeyIndexDefined">true</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=65C591A2C3A02E45BA7DD98644D35DE4/Applicability/=Live/@EntryIndexedValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=65C591A2C3A02E45BA7DD98644D35DE4/Categories/=_005BWebDev_0020Masterclass_005D/@EntryIndexedValue">[WebDev Masterclass]</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=65C591A2C3A02E45BA7DD98644D35DE4/Description/@EntryValue">Add Event Mapping</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=65C591A2C3A02E45BA7DD98644D35DE4/Reformat/@EntryValue">false</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=65C591A2C3A02E45BA7DD98644D35DE4/Scope/=4EE777BA2624574EA6EB6535BA25B892/@KeyIndexDefined">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=65C591A2C3A02E45BA7DD98644D35DE4/Scope/=4EE777BA2624574EA6EB6535BA25B892/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=65C591A2C3A02E45BA7DD98644D35DE4/Scope/=4EE777BA2624574EA6EB6535BA25B892/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=65C591A2C3A02E45BA7DD98644D35DE4/Shortcut/@EntryValue">wdmc55</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=65C591A2C3A02E45BA7DD98644D35DE4/ShortenQualifiedReferences/@EntryValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=65C591A2C3A02E45BA7DD98644D35DE4/Text/@EntryValue">modelBuilder.Entity&lt;Event&gt;(x =&gt;
+{
+  x.ToTable("Events");
+
+  x.Property(x =&gt; x.Type).HasColumnName("EventType").HasConversion(x =&gt; x.ToString(), x =&gt; Enum.Parse&lt;EventType&gt;(x));
+  x.Property(x =&gt; x.State).HasConversion(x =&gt; x.ToString(), x =&gt; Enum.Parse&lt;EventState&gt;(x));
+
+  x.HasKey("Id");
+});</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=79383F76D6BB9540950F1DD23F516FC4/@KeyIndexDefined">true</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=79383F76D6BB9540950F1DD23F516FC4/Applicability/=Live/@EntryIndexedValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=79383F76D6BB9540950F1DD23F516FC4/Categories/=_005BWebDev_0020Masterclass_005D/@EntryIndexedValue">[WebDev Masterclass]</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=79383F76D6BB9540950F1DD23F516FC4/Description/@EntryValue">Add some products</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=79383F76D6BB9540950F1DD23F516FC4/Reformat/@EntryValue">false</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=79383F76D6BB9540950F1DD23F516FC4/Scope/=317884AB50A9A44BB2EFF5AFCBFB5296/@KeyIndexDefined">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=79383F76D6BB9540950F1DD23F516FC4/Scope/=317884AB50A9A44BB2EFF5AFCBFB5296/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=79383F76D6BB9540950F1DD23F516FC4/Scope/=317884AB50A9A44BB2EFF5AFCBFB5296/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=79383F76D6BB9540950F1DD23F516FC4/Shortcut/@EntryValue">wdmc08</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=79383F76D6BB9540950F1DD23F516FC4/ShortenQualifiedReferences/@EntryValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=79383F76D6BB9540950F1DD23F516FC4/Text/@EntryValue">await cmd.AddProduct("Product 1", "Description 1", 100m, true, "product1");
+await cmd.AddProduct("Product 2", "Description 2", 200m, true, "product2");
+await cmd.AddProduct("Product 3", "Description 3", 300m, true, "product3");
+await cmd.AddProduct("Product 4", "Description 4", 50m, false, "product4");</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7BB1F6A98015ED408008FABC7A1A53B5/@KeyIndexDefined">true</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7BB1F6A98015ED408008FABC7A1A53B5/Applicability/=Live/@EntryIndexedValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7BB1F6A98015ED408008FABC7A1A53B5/Categories/=_005BWebDev_0020Masterclass_005D/@EntryIndexedValue">[WebDev Masterclass]</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7BB1F6A98015ED408008FABC7A1A53B5/Description/@EntryValue">Create OrderItem to AddOrderRequest</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7BB1F6A98015ED408008FABC7A1A53B5/Reformat/@EntryValue">false</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7BB1F6A98015ED408008FABC7A1A53B5/Scope/=35B408F0D402364CBA726D8B97F5A394/@KeyIndexDefined">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7BB1F6A98015ED408008FABC7A1A53B5/Scope/=35B408F0D402364CBA726D8B97F5A394/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7BB1F6A98015ED408008FABC7A1A53B5/Scope/=35B408F0D402364CBA726D8B97F5A394/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7BB1F6A98015ED408008FABC7A1A53B5/Shortcut/@EntryValue">wdmc43</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7BB1F6A98015ED408008FABC7A1A53B5/ShortenQualifiedReferences/@EntryValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7BB1F6A98015ED408008FABC7A1A53B5/Text/@EntryValue">request.Items.Add(new OrderItem
+{
+    Name = "My Product",
+    Price = 123.5f,
+    Quantity = 2
+});
+$END$</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=866946ADADAEF84A9E9B60C623EDC540/@KeyIndexDefined">true</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=866946ADADAEF84A9E9B60C623EDC540/Applicability/=Live/@EntryIndexedValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=866946ADADAEF84A9E9B60C623EDC540/Categories/=_005BWebDev_0020Masterclass_005D/@EntryIndexedValue">[WebDev Masterclass]</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=866946ADADAEF84A9E9B60C623EDC540/Description/@EntryValue">Create AddOrderRequest</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=866946ADADAEF84A9E9B60C623EDC540/Reformat/@EntryValue">false</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=866946ADADAEF84A9E9B60C623EDC540/Scope/=96DA5CEE0329D845BD08D2C0C110E059/@KeyIndexDefined">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=866946ADADAEF84A9E9B60C623EDC540/Scope/=96DA5CEE0329D845BD08D2C0C110E059/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=866946ADADAEF84A9E9B60C623EDC540/Scope/=96DA5CEE0329D845BD08D2C0C110E059/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=866946ADADAEF84A9E9B60C623EDC540/Shortcut/@EntryValue">wdmc47</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=866946ADADAEF84A9E9B60C623EDC540/ShortenQualifiedReferences/@EntryValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=866946ADADAEF84A9E9B60C623EDC540/Text/@EntryValue">var request = new WebDevMasterClass.Services.Orders.gRPC.AddOrderRequest
+{
+    DeliveryAddress = new Address
+    {
+        Name = order.DeliveryAddress.Name,
+        Street1 = order.DeliveryAddress.Street1,
+        Street2 = order.DeliveryAddress.Street2 ?? "",
+        PostalCode = order.DeliveryAddress.PostalCode,
+        City = order.DeliveryAddress.City,
+        Country = order.DeliveryAddress.Country,
+    },
+    BillingAddress = new Address
+    {
+        Name = order.BillingAddress.Name,
+        Street1 = order.BillingAddress.Street1,
+        Street2 = order.BillingAddress.Street2 ?? "",
+        PostalCode = order.BillingAddress.PostalCode,
+        City = order.BillingAddress.City,
+        Country = order.BillingAddress.Country,
+    }
+};
+
+$END$</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=880B639F76D7B44F9DBF4997B53704C6/@KeyIndexDefined">true</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=880B639F76D7B44F9DBF4997B53704C6/Applicability/=Live/@EntryIndexedValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=880B639F76D7B44F9DBF4997B53704C6/Categories/=_005BWebDev_0020Masterclass_005D/@EntryIndexedValue">[WebDev Masterclass]</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=880B639F76D7B44F9DBF4997B53704C6/Description/@EntryValue">Add OrdersService Failure response</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=880B639F76D7B44F9DBF4997B53704C6/Reformat/@EntryValue">false</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=880B639F76D7B44F9DBF4997B53704C6/Scope/=292E111E9071A84F97167248769CDE07/@KeyIndexDefined">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=880B639F76D7B44F9DBF4997B53704C6/Scope/=292E111E9071A84F97167248769CDE07/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=880B639F76D7B44F9DBF4997B53704C6/Scope/=292E111E9071A84F97167248769CDE07/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=880B639F76D7B44F9DBF4997B53704C6/Shortcut/@EntryValue">wdmc35</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=880B639F76D7B44F9DBF4997B53704C6/ShortenQualifiedReferences/@EntryValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=880B639F76D7B44F9DBF4997B53704C6/Text/@EntryValue">return new AddOrderResponse
+{
+    Success = false,
+    Error = ex.GetBaseException().Message
+};
+$END$</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=8A8DBB13CE5E534884DC9F6F87B1108E/@KeyIndexDefined">true</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=8A8DBB13CE5E534884DC9F6F87B1108E/Applicability/=Live/@EntryIndexedValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=8A8DBB13CE5E534884DC9F6F87B1108E/Categories/=_005BWebDev_0020Masterclass_005D/@EntryIndexedValue">[WebDev Masterclass]</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=8A8DBB13CE5E534884DC9F6F87B1108E/Description/@EntryValue">Add Events Migration</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=8A8DBB13CE5E534884DC9F6F87B1108E/Reformat/@EntryValue">false</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=8A8DBB13CE5E534884DC9F6F87B1108E/Scope/=D7E246AB0DCD5241A970CED2C6E7B1AB/@KeyIndexDefined">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=8A8DBB13CE5E534884DC9F6F87B1108E/Scope/=D7E246AB0DCD5241A970CED2C6E7B1AB/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=8A8DBB13CE5E534884DC9F6F87B1108E/Scope/=D7E246AB0DCD5241A970CED2C6E7B1AB/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=8A8DBB13CE5E534884DC9F6F87B1108E/Shortcut/@EntryValue">wdmc53</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=8A8DBB13CE5E534884DC9F6F87B1108E/ShortenQualifiedReferences/@EntryValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=8A8DBB13CE5E534884DC9F6F87B1108E/Text/@EntryValue">using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
+
+namespace WebDevMasterClass.Services.Orders.Data.Migrations;
+
+[Migration("002_EventsMigration")]
+[DbContext(typeof(OrdersContext))]
+public class EventsMigration : Migration
+{
+    protected override void Up(MigrationBuilder migrationBuilder)
+    {
+        migrationBuilder.CreateTable(
+                name: "Events",
+                columns: table =&gt; new {
+                    Id = table.Column&lt;int&gt;()
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    EventType = table.Column&lt;string&gt;(maxLength: 32),
+                    Date = table.Column&lt;DateTimeOffset&gt;(),
+                    Data = table.Column&lt;string&gt;(),
+                    State = table.Column&lt;string&gt;(),
+                },
+                constraints: table =&gt;
+                {
+                    table.PrimaryKey("PK_Events", x =&gt; x.Id);
+                }
+            );
+    }
+
+    protected override void Down(MigrationBuilder migrationBuilder)
+    {
+        migrationBuilder.DropTable("Events");
+    }
+}</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=8C2D49959B45244FA6DA7D64C33C1119/@KeyIndexDefined">true</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=8C2D49959B45244FA6DA7D64C33C1119/Applicability/=Live/@EntryIndexedValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=8C2D49959B45244FA6DA7D64C33C1119/Categories/=_005BWebDev_0020Masterclass_005D/@EntryIndexedValue">[WebDev Masterclass]</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=8C2D49959B45244FA6DA7D64C33C1119/Description/@EntryValue">Add authenticated test</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=8C2D49959B45244FA6DA7D64C33C1119/Reformat/@EntryValue">false</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=8C2D49959B45244FA6DA7D64C33C1119/Scope/=88B519D5A296A640BCAEF516B73F781A/@KeyIndexDefined">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=8C2D49959B45244FA6DA7D64C33C1119/Scope/=88B519D5A296A640BCAEF516B73F781A/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=8C2D49959B45244FA6DA7D64C33C1119/Scope/=88B519D5A296A640BCAEF516B73F781A/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=8C2D49959B45244FA6DA7D64C33C1119/Shortcut/@EntryValue">wdmc26</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=8C2D49959B45244FA6DA7D64C33C1119/ShortenQualifiedReferences/@EntryValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=8C2D49959B45244FA6DA7D64C33C1119/Text/@EntryValue">[Fact]
+public Task Get_returns_HTTP_200_OK_and_name_if_authenticated()
+    =&gt; TestHelper.ExecuteTest&lt;Program&gt;(
+            test: async client =&gt; {
+                var response = await client.GetAsync("/api/me");
+
+                Assert.Equal(Microsoft.AspNetCore.Http.StatusCodes.Status200OK, (int)response.StatusCode);
+                Assert.Equal("\"test\"", await response.Content.ReadAsStringAsync());
+            }
+        );</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=979AF238771A464FBA4DA1F5D7A90BB1/@KeyIndexDefined">true</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=979AF238771A464FBA4DA1F5D7A90BB1/Applicability/=Live/@EntryIndexedValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=979AF238771A464FBA4DA1F5D7A90BB1/Categories/=_005BWebDev_0020Masterclass_005D/@EntryIndexedValue">[WebDev Masterclass]</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=979AF238771A464FBA4DA1F5D7A90BB1/Description/@EntryValue">Wait for product retrieval to finish</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=979AF238771A464FBA4DA1F5D7A90BB1/Reformat/@EntryValue">false</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=979AF238771A464FBA4DA1F5D7A90BB1/Scope/=C1A891E18EBA43468D2A579B4774D3B7/@KeyIndexDefined">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=979AF238771A464FBA4DA1F5D7A90BB1/Scope/=C1A891E18EBA43468D2A579B4774D3B7/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=979AF238771A464FBA4DA1F5D7A90BB1/Scope/=C1A891E18EBA43468D2A579B4774D3B7/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=979AF238771A464FBA4DA1F5D7A90BB1/Shortcut/@EntryValue">wdmc48</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=979AF238771A464FBA4DA1F5D7A90BB1/ShortenQualifiedReferences/@EntryValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=979AF238771A464FBA4DA1F5D7A90BB1/Text/@EntryValue">try
+{
+    await Task.WhenAll(retrievalTasks);
+}
+catch (Exception ex)
+{
+    logger.LogError(ex, "Failed to retrieve product information");
+    return StatusCode(500, "Something went wrong...");
+}
+
+$END$</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=97CE339E0529564886B208D95BC2E88E/@KeyIndexDefined">true</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=97CE339E0529564886B208D95BC2E88E/Applicability/=Live/@EntryIndexedValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=97CE339E0529564886B208D95BC2E88E/Categories/=_005BWebDev_0020Masterclass_005D/@EntryIndexedValue">[WebDev Masterclass]</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=97CE339E0529564886B208D95BC2E88E/Description/@EntryValue">Add gRPC test implementation pt 2</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=97CE339E0529564886B208D95BC2E88E/Reformat/@EntryValue">false</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=97CE339E0529564886B208D95BC2E88E/Scope/=6AB4C51C8F47384B9160AB41495071EC/@KeyIndexDefined">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=97CE339E0529564886B208D95BC2E88E/Scope/=6AB4C51C8F47384B9160AB41495071EC/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=97CE339E0529564886B208D95BC2E88E/Scope/=6AB4C51C8F47384B9160AB41495071EC/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=97CE339E0529564886B208D95BC2E88E/Shortcut/@EntryValue">wdmc40</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=97CE339E0529564886B208D95BC2E88E/ShortenQualifiedReferences/@EntryValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=97CE339E0529564886B208D95BC2E88E/Text/@EntryValue">using var services = app.Services.CreateScope();
+
+var ctx = services.ServiceProvider.GetRequiredService&lt;TDbContext&gt;();
+
+await using var transaction = ctx.Database.BeginTransaction();
+
+var conn = ctx.Database.GetDbConnection();
+var cmd = conn.CreateCommand();
+cmd.Transaction = transaction.GetDbTransaction();
+
+if (dbConfig != null)
+    await dbConfig(cmd);
+
+$END$// await test(client);
+
+if (validateDb != null)
+    await validateDb(cmd);</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=981C804A3C38274B8B8B935BC88E3849/@KeyIndexDefined">true</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=981C804A3C38274B8B8B935BC88E3849/Applicability/=Live/@EntryIndexedValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=981C804A3C38274B8B8B935BC88E3849/Categories/=_005BWebDev_0020Masterclass_005D/@EntryIndexedValue">[WebDev Masterclass]</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=981C804A3C38274B8B8B935BC88E3849/Description/@EntryValue">Add ProductEndpoint test outline</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=981C804A3C38274B8B8B935BC88E3849/Reformat/@EntryValue">false</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=981C804A3C38274B8B8B935BC88E3849/Scope/=E0EF19AC5A258947A740CBA3E898722D/@KeyIndexDefined">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=981C804A3C38274B8B8B935BC88E3849/Scope/=E0EF19AC5A258947A740CBA3E898722D/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=981C804A3C38274B8B8B935BC88E3849/Scope/=E0EF19AC5A258947A740CBA3E898722D/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=981C804A3C38274B8B8B935BC88E3849/Shortcut/@EntryValue">wdmc13</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=981C804A3C38274B8B8B935BC88E3849/ShortenQualifiedReferences/@EntryValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=981C804A3C38274B8B8B935BC88E3849/Text/@EntryValue">[Fact]
+public Task GET_Returns_HTTP_200_and_the_requested_product()
+{
+  $END$
+}</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=9AA38963DFD4BE409D5BE5AA43DC2FA9/@KeyIndexDefined">true</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=9AA38963DFD4BE409D5BE5AA43DC2FA9/Applicability/=Live/@EntryIndexedValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=9AA38963DFD4BE409D5BE5AA43DC2FA9/Categories/=_005BWebDev_0020Masterclass_005D/@EntryIndexedValue">[WebDev Masterclass]</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=9AA38963DFD4BE409D5BE5AA43DC2FA9/Description/@EntryValue">EF Migration</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=9AA38963DFD4BE409D5BE5AA43DC2FA9/Field/=DbContext/@KeyIndexDefined">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=9AA38963DFD4BE409D5BE5AA43DC2FA9/Field/=DbContext/Expression/@EntryValue">constant("MyDbContext")</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=9AA38963DFD4BE409D5BE5AA43DC2FA9/Field/=DbContext/Order/@EntryValue">2</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=9AA38963DFD4BE409D5BE5AA43DC2FA9/Field/=MigrationName/@KeyIndexDefined">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=9AA38963DFD4BE409D5BE5AA43DC2FA9/Field/=MigrationName/Expression/@EntryValue">constant("MyMigration")</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=9AA38963DFD4BE409D5BE5AA43DC2FA9/Field/=MigrationName/Order/@EntryValue">1</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=9AA38963DFD4BE409D5BE5AA43DC2FA9/Field/=SequenceNr/@KeyIndexDefined">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=9AA38963DFD4BE409D5BE5AA43DC2FA9/Field/=SequenceNr/Expression/@EntryValue">constant("XXXXXXX")</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=9AA38963DFD4BE409D5BE5AA43DC2FA9/Field/=SequenceNr/Order/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=9AA38963DFD4BE409D5BE5AA43DC2FA9/Reformat/@EntryValue">true</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=9AA38963DFD4BE409D5BE5AA43DC2FA9/Scope/=8DFB228ADCB143499824085D066540CE/@KeyIndexDefined">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=9AA38963DFD4BE409D5BE5AA43DC2FA9/Scope/=8DFB228ADCB143499824085D066540CE/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=9AA38963DFD4BE409D5BE5AA43DC2FA9/Scope/=8DFB228ADCB143499824085D066540CE/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=9AA38963DFD4BE409D5BE5AA43DC2FA9/Shortcut/@EntryValue">efm</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=9AA38963DFD4BE409D5BE5AA43DC2FA9/ShortenQualifiedReferences/@EntryValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=9AA38963DFD4BE409D5BE5AA43DC2FA9/Text/@EntryValue">[Microsoft.EntityFrameworkCore.Migrations.Migration("$SequenceNr$_$MigrationName$")]
+[Microsoft.EntityFrameworkCore.Infrastructure.DbContext(typeof($DbContext$))]
+public class $MigrationName$ : Microsoft.EntityFrameworkCore.Migrations.Migration
+{
+    protected override void Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder builder)
+    {
+        $END$
+    }
+
+    protected override void Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder builder)
+    {
+        
+    }
+}</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=9DC942AEE29FBF4396B0B73837D02349/@KeyIndexDefined">true</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=9DC942AEE29FBF4396B0B73837D02349/Applicability/=Live/@EntryIndexedValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=9DC942AEE29FBF4396B0B73837D02349/Categories/=_005BWebDev_0020Masterclass_005D/@EntryIndexedValue">[WebDev Masterclass]</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=9DC942AEE29FBF4396B0B73837D02349/Description/@EntryValue">Simplified grain test 1</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=9DC942AEE29FBF4396B0B73837D02349/Reformat/@EntryValue">false</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=9DC942AEE29FBF4396B0B73837D02349/Scope/=E51A022E23D5F74894FD34A5074EED92/@KeyIndexDefined">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=9DC942AEE29FBF4396B0B73837D02349/Scope/=E51A022E23D5F74894FD34A5074EED92/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=9DC942AEE29FBF4396B0B73837D02349/Scope/=E51A022E23D5F74894FD34A5074EED92/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=9DC942AEE29FBF4396B0B73837D02349/Shortcut/@EntryValue">wdmc22</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=9DC942AEE29FBF4396B0B73837D02349/ShortenQualifiedReferences/@EntryValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=9DC942AEE29FBF4396B0B73837D02349/Text/@EntryValue">=&gt; ExecuteTest(
+    serviceConfig: (grainFactory, _) =&gt;
+    {
+        var grainFake = A.Fake&lt;IShoppingCart&gt;();
+        A.CallTo(() =&gt; grainFake.GetItems()).Returns([ new ShoppingCartItem {
+                    ProductId = 1,
+                    ProductName = "Test Product",
+                    Count = 1,
+                    Price = 1.23m
+                }]);
+
+        A.CallTo(() =&gt; grainFactory.GetGrain&lt;IShoppingCart&gt;("TestCart", null)).Returns(grainFake);
+    },
+    test: async client =&gt;
+    {
+        client.DefaultRequestHeaders.Add("Cookie", "ShoppingCartId=TestCart");
+        var response = await client.GetAsync("/api/shopping-cart");
+
+        response.EnsureSuccessStatusCode();
+
+        Assert.Equal("application/json", response.Content.Headers.ContentType!.MediaType);
+
+        var shoppingCart = JArray.Parse(await response.Content.ReadAsStringAsync());
+
+        var item = (JObject)Assert.Single(shoppingCart);
+
+        Assert.Equal(1, item["productId"]);
+        Assert.Equal("Test Product", item["productName"]);
+        Assert.Equal(1, item["count"]);
+        Assert.Equal(1.23m, item["price"]);
+    }
+);</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=9E8051356666074B88B1BA11C8432554/@KeyIndexDefined">true</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=9E8051356666074B88B1BA11C8432554/Applicability/=Live/@EntryIndexedValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=9E8051356666074B88B1BA11C8432554/Categories/=_005BWebDev_0020Masterclass_005D/@EntryIndexedValue">[WebDev Masterclass]</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=9E8051356666074B88B1BA11C8432554/Description/@EntryValue">Add OrdersMetrics implementation</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=9E8051356666074B88B1BA11C8432554/Reformat/@EntryValue">false</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=9E8051356666074B88B1BA11C8432554/Scope/=3BA37C4094C1CF42B85CBF27A7A2D137/@KeyIndexDefined">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=9E8051356666074B88B1BA11C8432554/Scope/=3BA37C4094C1CF42B85CBF27A7A2D137/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=9E8051356666074B88B1BA11C8432554/Scope/=3BA37C4094C1CF42B85CBF27A7A2D137/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=9E8051356666074B88B1BA11C8432554/Shortcut/@EntryValue">wdmc52</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=9E8051356666074B88B1BA11C8432554/ShortenQualifiedReferences/@EntryValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=9E8051356666074B88B1BA11C8432554/Text/@EntryValue">public const string MeterName = "WebDevMasterClass.Services.Orders";
+private System.Diagnostics.Metrics.Counter&lt;int&gt; TotalOrdersCounter { get; }
+
+public OrdersMetrics(IMeterFactory meterFactory)
+{
+    var meter = meterFactory.Create(MeterName);
+
+    TotalOrdersCounter = meter.CreateCounter&lt;int&gt;("orders", "Order", "Orders added");
+}
+
+public void AddOrder() =&gt; TotalOrdersCounter.Add(1);</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A25D9077D626974D9C6C2F2754BC65A6/@KeyIndexDefined">true</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A25D9077D626974D9C6C2F2754BC65A6/Applicability/=Live/@EntryIndexedValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A25D9077D626974D9C6C2F2754BC65A6/Categories/=_005BWebDev_0020Masterclass_005D/@EntryIndexedValue">[WebDev Masterclass]</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A25D9077D626974D9C6C2F2754BC65A6/Description/@EntryValue">Add interceptor implementation</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A25D9077D626974D9C6C2F2754BC65A6/Reformat/@EntryValue">false</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A25D9077D626974D9C6C2F2754BC65A6/Scope/=E3684D26909F214C8285899717BD4A01/@KeyIndexDefined">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A25D9077D626974D9C6C2F2754BC65A6/Scope/=E3684D26909F214C8285899717BD4A01/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A25D9077D626974D9C6C2F2754BC65A6/Scope/=E3684D26909F214C8285899717BD4A01/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A25D9077D626974D9C6C2F2754BC65A6/Shortcut/@EntryValue">wdmc56</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A25D9077D626974D9C6C2F2754BC65A6/ShortenQualifiedReferences/@EntryValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A25D9077D626974D9C6C2F2754BC65A6/Text/@EntryValue">var events = eventData.Context!.ChangeTracker.Entries&lt;WebDevMasterClass.Services.Orders.Entities.Order&gt;()
+    .Where(x =&gt; x.State == Microsoft.EntityFrameworkCore.EntityState.Added)
+    .Select(x =&gt; new Event
+    {
+        Type = EventType.OrderCreated,
+        State = EventState.Pending,
+        Date = DateTimeOffset.UtcNow,
+        Data = x.Entity.OrderId
+    })
+    .ToArray();</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A37487AC5BBCFC4C8761747DF63BF399/@KeyIndexDefined">true</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A37487AC5BBCFC4C8761747DF63BF399/Applicability/=Live/@EntryIndexedValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A37487AC5BBCFC4C8761747DF63BF399/Categories/=_005BWebDev_0020Masterclass_005D/@EntryIndexedValue">[WebDev Masterclass]</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A37487AC5BBCFC4C8761747DF63BF399/Description/@EntryValue">Assert returned products</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A37487AC5BBCFC4C8761747DF63BF399/Reformat/@EntryValue">false</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A37487AC5BBCFC4C8761747DF63BF399/Scope/=B4794C6CCD0C4144B980C926CF3176C5/@KeyIndexDefined">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A37487AC5BBCFC4C8761747DF63BF399/Scope/=B4794C6CCD0C4144B980C926CF3176C5/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A37487AC5BBCFC4C8761747DF63BF399/Scope/=B4794C6CCD0C4144B980C926CF3176C5/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A37487AC5BBCFC4C8761747DF63BF399/Shortcut/@EntryValue">wdmc09</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A37487AC5BBCFC4C8761747DF63BF399/ShortenQualifiedReferences/@EntryValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A37487AC5BBCFC4C8761747DF63BF399/Text/@EntryValue">Assert.Equal(3, products.Count);
+
+Assert.Contains(products, x =&gt; x.Value&lt;string&gt;("name") == "Product 1");
+Assert.Contains(products, x =&gt; x.Value&lt;string&gt;("name") == "Product 2");
+Assert.Contains(products, x =&gt; x.Value&lt;string&gt;("name") == "Product 3");</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A6E97C04A977EE41962103C668DCF681/@KeyIndexDefined">true</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A6E97C04A977EE41962103C668DCF681/Applicability/=Live/@EntryIndexedValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A6E97C04A977EE41962103C668DCF681/Categories/=_005BWebDev_0020Masterclass_005D/@EntryIndexedValue">[WebDev Masterclass]</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A6E97C04A977EE41962103C668DCF681/Description/@EntryValue">Add database migration to Orders service</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A6E97C04A977EE41962103C668DCF681/Reformat/@EntryValue">false</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A6E97C04A977EE41962103C668DCF681/Scope/=95EE19241E647E4CA8AF9D304AEA7D15/@KeyIndexDefined">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A6E97C04A977EE41962103C668DCF681/Scope/=95EE19241E647E4CA8AF9D304AEA7D15/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A6E97C04A977EE41962103C668DCF681/Scope/=95EE19241E647E4CA8AF9D304AEA7D15/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A6E97C04A977EE41962103C668DCF681/Shortcut/@EntryValue">wdmc37</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A6E97C04A977EE41962103C668DCF681/ShortenQualifiedReferences/@EntryValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A6E97C04A977EE41962103C668DCF681/Text/@EntryValue">if (app.Environment.IsDevelopment())
+{
+    using var scope = app.Services.CreateScope();
+    using var ctx = scope.ServiceProvider.GetRequiredService&lt;OrdersContext&gt;();
+    
+    ctx.Database.Migrate();
+}</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A7250820CC0E8443B50811FAA515EEBD/@KeyIndexDefined">true</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A7250820CC0E8443B50811FAA515EEBD/Applicability/=Live/@EntryIndexedValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A7250820CC0E8443B50811FAA515EEBD/Categories/=_005BWebDev_0020Masterclass_005D/@EntryIndexedValue">[WebDev Masterclass]</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A7250820CC0E8443B50811FAA515EEBD/Description/@EntryValue">Add sslPwdParameter</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A7250820CC0E8443B50811FAA515EEBD/Reformat/@EntryValue">false</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A7250820CC0E8443B50811FAA515EEBD/Scope/=74A12966A1C33C4EA8A27D7093F98BF5/@KeyIndexDefined">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A7250820CC0E8443B50811FAA515EEBD/Scope/=74A12966A1C33C4EA8A27D7093F98BF5/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A7250820CC0E8443B50811FAA515EEBD/Scope/=74A12966A1C33C4EA8A27D7093F98BF5/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A7250820CC0E8443B50811FAA515EEBD/Shortcut/@EntryValue">wdmc24</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A7250820CC0E8443B50811FAA515EEBD/ShortenQualifiedReferences/@EntryValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A7250820CC0E8443B50811FAA515EEBD/Text/@EntryValue">#pragma warning disable ASPIREINTERACTION001
+var sslPwdParameter = builder.AddParameter("ssl-password", true)
+    .WithCustomInput(parameter =&gt; new()
+    {
+        Name = parameter.Name,
+        Label = "SSL Certificate Password",
+        Placeholder = "The password",
+        InputType = InputType.SecretText,
+        Required = true
+    });
+#pragma warning restore ASPIREINTERACTION001</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A78C1DC2EC4BCD40A8E415897016C7D1/@KeyIndexDefined">true</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A78C1DC2EC4BCD40A8E415897016C7D1/Applicability/=Live/@EntryIndexedValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A78C1DC2EC4BCD40A8E415897016C7D1/Categories/=_005BWebDev_0020Masterclass_005D/@EntryIndexedValue">[WebDev Masterclass]</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A78C1DC2EC4BCD40A8E415897016C7D1/Description/@EntryValue">Handle OrdersService response</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A78C1DC2EC4BCD40A8E415897016C7D1/Reformat/@EntryValue">false</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A78C1DC2EC4BCD40A8E415897016C7D1/Scope/=30171F46BD3A364A88951DA709BFF5A4/@KeyIndexDefined">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A78C1DC2EC4BCD40A8E415897016C7D1/Scope/=30171F46BD3A364A88951DA709BFF5A4/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A78C1DC2EC4BCD40A8E415897016C7D1/Scope/=30171F46BD3A364A88951DA709BFF5A4/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A78C1DC2EC4BCD40A8E415897016C7D1/Shortcut/@EntryValue">wdmc51</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A78C1DC2EC4BCD40A8E415897016C7D1/ShortenQualifiedReferences/@EntryValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A78C1DC2EC4BCD40A8E415897016C7D1/Text/@EntryValue">if (!response.Success)
+{
+    logger.LogError("Failed to add order: {error}", response.Error);
+    return StatusCode(500, "Something went wrong...");
+}
+
+return Ok(new { response.Success, response.OrderId });</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A7CD1ABAA1A6834CA4EF168CDCBBFACF/@KeyIndexDefined">true</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A7CD1ABAA1A6834CA4EF168CDCBBFACF/Applicability/=Live/@EntryIndexedValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A7CD1ABAA1A6834CA4EF168CDCBBFACF/Categories/=_005BWebDev_0020Masterclass_005D/@EntryIndexedValue">[WebDev Masterclass]</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A7CD1ABAA1A6834CA4EF168CDCBBFACF/Description/@EntryValue">Add Shopping Cart Test Outline</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A7CD1ABAA1A6834CA4EF168CDCBBFACF/Reformat/@EntryValue">false</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A7CD1ABAA1A6834CA4EF168CDCBBFACF/Scope/=973B544862FBBD44A52294FEED37A081/@KeyIndexDefined">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A7CD1ABAA1A6834CA4EF168CDCBBFACF/Scope/=973B544862FBBD44A52294FEED37A081/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A7CD1ABAA1A6834CA4EF168CDCBBFACF/Scope/=973B544862FBBD44A52294FEED37A081/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A7CD1ABAA1A6834CA4EF168CDCBBFACF/Shortcut/@EntryValue">wdmc18</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A7CD1ABAA1A6834CA4EF168CDCBBFACF/ShortenQualifiedReferences/@EntryValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A7CD1ABAA1A6834CA4EF168CDCBBFACF/Text/@EntryValue">[Fact]
+public Task Gets_shopping_cart_from_grain_if_ShoppingCartId_cookie_exists()
+    =&gt; TestHelper.ExecuteTest&lt;Program&gt;(
+        test: async client =&gt;
+        {
+            client.DefaultRequestHeaders.Add("Cookie", "ShoppingCartId=TestCart");
+            var response = await client.GetAsync("/api/shopping-cart");
+
+            response.EnsureSuccessStatusCode();
+
+            Assert.Equal("application/json", response.Content.Headers.ContentType!.MediaType);
+
+            var shoppingCart = JArray.Parse(await response.Content.ReadAsStringAsync());
+
+            var item = (JObject)Assert.Single(shoppingCart);
+
+            Assert.Equal(1, item["productId"]);
+            Assert.Equal("Test Product", item["productName"]);
+            Assert.Equal(1, item["count"]);
+            Assert.Equal(1.23m, item["price"]);
+        });</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B252AEE1EE6015439D5DD9BC6BDD7E1A/@KeyIndexDefined">true</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B252AEE1EE6015439D5DD9BC6BDD7E1A/Applicability/=Live/@EntryIndexedValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B252AEE1EE6015439D5DD9BC6BDD7E1A/Categories/=_005BWebDev_0020Masterclass_005D/@EntryIndexedValue">[WebDev Masterclass]</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B252AEE1EE6015439D5DD9BC6BDD7E1A/Description/@EntryValue">Validate that test order was added to Db</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B252AEE1EE6015439D5DD9BC6BDD7E1A/Reformat/@EntryValue">false</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B252AEE1EE6015439D5DD9BC6BDD7E1A/Scope/=FA956F792AC7504E9F797702DD1C6D7E/@KeyIndexDefined">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B252AEE1EE6015439D5DD9BC6BDD7E1A/Scope/=FA956F792AC7504E9F797702DD1C6D7E/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B252AEE1EE6015439D5DD9BC6BDD7E1A/Scope/=FA956F792AC7504E9F797702DD1C6D7E/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B252AEE1EE6015439D5DD9BC6BDD7E1A/Shortcut/@EntryValue">wdmc44</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B252AEE1EE6015439D5DD9BC6BDD7E1A/ShortenQualifiedReferences/@EntryValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B252AEE1EE6015439D5DD9BC6BDD7E1A/Text/@EntryValue">int id;
+string orderId;
+cmd.CommandText = "SELECT * FROM Orders";
+using (var reader = await cmd.ExecuteReaderAsync())
+{
+    Assert.True(reader.Read());
+    id = (int)reader["Id"];
+    orderId = (string)reader["OrderId"];
+    Assert.Equal(247, (decimal)reader["Total"]);
+    Assert.False(reader.Read());
+}
+cmd.CommandText = "SELECT * FROM OrderItems WHERE OrderId = " + id;
+using (var reader = await cmd.ExecuteReaderAsync())
+{
+    Assert.True(reader.Read());
+    Assert.Equal("My Product", (string)reader["Name"]);
+    Assert.Equal(123.5m, (decimal)reader["Price"]);
+    Assert.Equal(2, (int)reader["Quantity"]);
+    Assert.False(reader.Read());
+}
+cmd.CommandText = "SELECT * FROM Addresses WHERE AddressType = 'Delivery' AND OrderId = " + id;
+using (var reader = await cmd.ExecuteReaderAsync())
+{
+    Assert.True(reader.Read());
+    Assert.Equal("Chris Klug", (string)reader["Name"]);
+    Assert.Equal("Teststreet 1", (string)reader["Street1"]);
+    Assert.Equal("", (string)reader["Street2"]);
+    Assert.Equal("12345", (string)reader["PostalCode"]);
+    Assert.Equal("Stockholm", (string)reader["City"]);
+    Assert.Equal("Sweden", (string)reader["Country"]);
+    Assert.False(reader.Read());
+}
+cmd.CommandText = "SELECT * FROM Addresses WHERE AddressType = 'Billing' AND OrderId = " + id;
+using (var reader = await cmd.ExecuteReaderAsync())
+{
+    Assert.True(reader.Read());
+    Assert.Equal("John Doe", (string)reader["Name"]);
+    Assert.Equal("Somestreet 1", (string)reader["Street1"]);
+    Assert.Equal("", (string)reader["Street2"]);
+    Assert.Equal("56789", (string)reader["PostalCode"]);
+    Assert.Equal("Whoville", (string)reader["City"]);
+    Assert.Equal("Denmark", (string)reader["Country"]);
+    Assert.False(reader.Read());
+}</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B7074C218196CC4F99942CCB63DCF698/@KeyIndexDefined">true</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B7074C218196CC4F99942CCB63DCF698/Applicability/=Live/@EntryIndexedValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B7074C218196CC4F99942CCB63DCF698/Categories/=_005BWebDev_0020Masterclass_005D/@EntryIndexedValue">[WebDev Masterclass]</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B7074C218196CC4F99942CCB63DCF698/Description/@EntryValue">Add Orders Initial Migration</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B7074C218196CC4F99942CCB63DCF698/Reformat/@EntryValue">false</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B7074C218196CC4F99942CCB63DCF698/Scope/=FE57649E41F5BC428287476CD8CE389B/@KeyIndexDefined">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B7074C218196CC4F99942CCB63DCF698/Scope/=FE57649E41F5BC428287476CD8CE389B/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B7074C218196CC4F99942CCB63DCF698/Scope/=FE57649E41F5BC428287476CD8CE389B/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B7074C218196CC4F99942CCB63DCF698/Shortcut/@EntryValue">wdmc29</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B7074C218196CC4F99942CCB63DCF698/ShortenQualifiedReferences/@EntryValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B7074C218196CC4F99942CCB63DCF698/Text/@EntryValue">using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
+
+namespace WebDevMasterClass.Services.Orders.Data.Migrations;
+
+[Migration("001_InitialMigration")]
+[DbContext(typeof(OrdersContext))]
+public class InitialMigration : Migration
+{
+    protected override void Up(MigrationBuilder migrationBuilder)
+    {
+        migrationBuilder.CreateTable(
+                name: "Orders",
+                columns: table =&gt; new {
+                    Id = table.Column&lt;int&gt;()
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    OrderId = table.Column&lt;string&gt;(maxLength: 16),
+                    OrderDate = table.Column&lt;DateTimeOffset&gt;(),
+                    Total = table.Column&lt;decimal&gt;()
+                },
+                constraints: table =&gt;
+                {
+                    table.PrimaryKey("PK_Orders", x =&gt; x.Id);
+                    table.UniqueConstraint("UQ_Orders_OrderId", x =&gt; x.OrderId);
+                }
+            );
+
+        migrationBuilder.CreateTable(
+                name: "OrderItems",
+                columns: table =&gt; new {
+                    OrderId = table.Column&lt;int&gt;(),
+                    ItemId = table.Column&lt;int&gt;(),
+                    Name = table.Column&lt;string&gt;(maxLength: 128),
+                    Quantity = table.Column&lt;int&gt;(),
+                    Price = table.Column&lt;decimal&gt;()
+                },
+                constraints: table =&gt;
+                {
+                    table.PrimaryKey("PK_OrderItems", x =&gt; new { x.OrderId, x.ItemId });
+                    table.ForeignKey("FK_OrderItems_Orders_OrderId", x =&gt; x.OrderId, "Orders", "Id", onDelete: ReferentialAction.Cascade);
+                }
+            );
+
+        migrationBuilder.CreateTable(
+                name: "Addresses",
+                columns: table =&gt; new {
+                    Id = table.Column&lt;int&gt;()
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    OrderId = table.Column&lt;int&gt;(),
+                    AddressType = table.Column&lt;string&gt;(maxLength: 16),
+                    Name = table.Column&lt;string&gt;(maxLength: 128),
+                    Street1 = table.Column&lt;string&gt;(),
+                    Street2 = table.Column&lt;string&gt;(nullable: true),
+                    PostalCode = table.Column&lt;string&gt;(),
+                    City = table.Column&lt;string&gt;(),
+                    Country = table.Column&lt;string&gt;()
+                },
+                constraints: table =&gt;
+                {
+                    table.PrimaryKey("PK_Addresses", x =&gt; x.Id);
+                    table.ForeignKey("FK_Addresses_Orders_OrderId", x =&gt; x.OrderId, "Orders", "Id", onDelete: ReferentialAction.Cascade);
+                }
+            );
+    }
+
+    protected override void Down(MigrationBuilder migrationBuilder)
+    {
+        migrationBuilder.DropTable("Addresses");
+        migrationBuilder.DropTable("OrderItems");
+        migrationBuilder.DropTable("Orders");
+    }
+}</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BD584E14E4B74A4FA5978665FC712CEB/@KeyIndexDefined">true</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BD584E14E4B74A4FA5978665FC712CEB/Applicability/=Live/@EntryIndexedValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BD584E14E4B74A4FA5978665FC712CEB/Categories/=_005BWebDev_0020Masterclass_005D/@EntryIndexedValue">[WebDev Masterclass]</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BD584E14E4B74A4FA5978665FC712CEB/Description/@EntryValue">Add ProductEndpoint test implemetation base</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BD584E14E4B74A4FA5978665FC712CEB/Reformat/@EntryValue">false</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BD584E14E4B74A4FA5978665FC712CEB/Scope/=1030DBD6DCE07849A148B47340A71E20/@KeyIndexDefined">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BD584E14E4B74A4FA5978665FC712CEB/Scope/=1030DBD6DCE07849A148B47340A71E20/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BD584E14E4B74A4FA5978665FC712CEB/Scope/=1030DBD6DCE07849A148B47340A71E20/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BD584E14E4B74A4FA5978665FC712CEB/Shortcut/@EntryValue">wdmc14</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BD584E14E4B74A4FA5978665FC712CEB/ShortenQualifiedReferences/@EntryValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BD584E14E4B74A4FA5978665FC712CEB/Text/@EntryValue">return WebDevMasterClass.Testing.TestHelper.ExecuteTest&lt;Program, WebDevMasterClass.Services.Products.Data.ProductsContext&gt;(
+    dbSetup: async cmd =&gt;
+    {
+      $END$
+    },
+    test: async client =&gt;
+    {
+
+    }
+);</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=C02F3BBA4173264187AA90C3E4FFD865/@KeyIndexDefined">true</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=C02F3BBA4173264187AA90C3E4FFD865/Applicability/=Live/@EntryIndexedValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=C02F3BBA4173264187AA90C3E4FFD865/Categories/=_005BWebDev_0020Masterclass_005D/@EntryIndexedValue">[WebDev Masterclass]</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=C02F3BBA4173264187AA90C3E4FFD865/Description/@EntryValue">Call orders service</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=C02F3BBA4173264187AA90C3E4FFD865/Reformat/@EntryValue">false</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=C02F3BBA4173264187AA90C3E4FFD865/Scope/=2422ED41FFE82648A6B6F8EC64B9F379/@KeyIndexDefined">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=C02F3BBA4173264187AA90C3E4FFD865/Scope/=2422ED41FFE82648A6B6F8EC64B9F379/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=C02F3BBA4173264187AA90C3E4FFD865/Scope/=2422ED41FFE82648A6B6F8EC64B9F379/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=C02F3BBA4173264187AA90C3E4FFD865/Shortcut/@EntryValue">wdmc50</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=C02F3BBA4173264187AA90C3E4FFD865/ShortenQualifiedReferences/@EntryValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=C02F3BBA4173264187AA90C3E4FFD865/Text/@EntryValue">AddOrderResponse response;
+try
+{
+    response = await ordersService.AddOrderAsync(request);
+}
+catch (Exception ex)
+{
+   logger.LogError(ex, "Failed to add order");
+   return StatusCode(500, "Something went wrong...");
+}
+
+$END$</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=C415F82CFFBE2E4DA04303FC1FF0E8DD/@KeyIndexDefined">true</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=C415F82CFFBE2E4DA04303FC1FF0E8DD/Applicability/=Live/@EntryIndexedValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=C415F82CFFBE2E4DA04303FC1FF0E8DD/Categories/=_005BWebDev_0020Masterclass_005D/@EntryIndexedValue">[WebDev Masterclass]</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=C415F82CFFBE2E4DA04303FC1FF0E8DD/Description/@EntryValue">Add In-Memory config</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=C415F82CFFBE2E4DA04303FC1FF0E8DD/Reformat/@EntryValue">true</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=C415F82CFFBE2E4DA04303FC1FF0E8DD/Scope/=CBE1C3B0BD61B546861975A24C6023CE/@KeyIndexDefined">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=C415F82CFFBE2E4DA04303FC1FF0E8DD/Scope/=CBE1C3B0BD61B546861975A24C6023CE/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=C415F82CFFBE2E4DA04303FC1FF0E8DD/Scope/=CBE1C3B0BD61B546861975A24C6023CE/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=C415F82CFFBE2E4DA04303FC1FF0E8DD/Shortcut/@EntryValue">wdmc03</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=C415F82CFFBE2E4DA04303FC1FF0E8DD/ShortenQualifiedReferences/@EntryValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=C415F82CFFBE2E4DA04303FC1FF0E8DD/Text/@EntryValue">config.AddInMemoryCollection([
+    new KeyValuePair&lt;string, string?&gt;("ConnectionStrings:WebDevMasterClass-Products", "Server=.;Database=WebDevMasterClass.Products.Tests;User Id=sa;Password=MyVerySecretPassw0rd;Encrypt=Yes;Trust Server Certificate=Yes;")
+]);</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=C68C3ED64959B646B64421F1C630CA60/@KeyIndexDefined">true</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=C68C3ED64959B646B64421F1C630CA60/Applicability/=Live/@EntryIndexedValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=C68C3ED64959B646B64421F1C630CA60/Categories/=_005BWebDev_0020Masterclass_005D/@EntryIndexedValue">[WebDev Masterclass]</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=C68C3ED64959B646B64421F1C630CA60/Description/@EntryValue">Add OrderItem Mapping</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=C68C3ED64959B646B64421F1C630CA60/Reformat/@EntryValue">false</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=C68C3ED64959B646B64421F1C630CA60/Scope/=144D7CD3A0EFB846A9A6C0F8D9D1DA5B/@KeyIndexDefined">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=C68C3ED64959B646B64421F1C630CA60/Scope/=144D7CD3A0EFB846A9A6C0F8D9D1DA5B/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=C68C3ED64959B646B64421F1C630CA60/Scope/=144D7CD3A0EFB846A9A6C0F8D9D1DA5B/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=C68C3ED64959B646B64421F1C630CA60/Shortcut/@EntryValue">wdmc31</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=C68C3ED64959B646B64421F1C630CA60/ShortenQualifiedReferences/@EntryValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=C68C3ED64959B646B64421F1C630CA60/Text/@EntryValue">modelBuilder.Entity&lt;OrderItem&gt;(x =&gt;
+{
+    x.ToTable("OrderItems");
+
+    x.Property&lt;int&gt;("id").HasColumnName("ItemId");
+    x.Property&lt;int&gt;("OrderId");
+
+    x.HasKey("id");
+});$END$</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=D199856CABF2FB46AACC3830AADAC2C3/@KeyIndexDefined">true</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=D199856CABF2FB46AACC3830AADAC2C3/Applicability/=Live/@EntryIndexedValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=D199856CABF2FB46AACC3830AADAC2C3/Categories/=_005BWebDev_0020Masterclass_005D/@EntryIndexedValue">[WebDev Masterclass]</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=D199856CABF2FB46AACC3830AADAC2C3/Description/@EntryValue">Add AddProduct method signature</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=D199856CABF2FB46AACC3830AADAC2C3/Reformat/@EntryValue">false</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=D199856CABF2FB46AACC3830AADAC2C3/Scope/=28B5969F6F5F404A825B02C57F681285/@KeyIndexDefined">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=D199856CABF2FB46AACC3830AADAC2C3/Scope/=28B5969F6F5F404A825B02C57F681285/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=D199856CABF2FB46AACC3830AADAC2C3/Scope/=28B5969F6F5F404A825B02C57F681285/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=D199856CABF2FB46AACC3830AADAC2C3/Shortcut/@EntryValue">wdmc06</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=D199856CABF2FB46AACC3830AADAC2C3/ShortenQualifiedReferences/@EntryValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=D199856CABF2FB46AACC3830AADAC2C3/Text/@EntryValue">public static async Task&lt;int&gt; AddProduct(this System.Data.Common.DbCommand cmd,
+                                            string name,
+                                            string description,
+                                            decimal price,
+                                            bool isFeatured,
+                                            string imageName)
+{
+    $END$
+}</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E5F41F16D3897347825909CDA14D6FFB/@KeyIndexDefined">true</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E5F41F16D3897347825909CDA14D6FFB/Applicability/=Live/@EntryIndexedValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E5F41F16D3897347825909CDA14D6FFB/Categories/=_005BWebDev_0020Masterclass_005D/@EntryIndexedValue">[WebDev Masterclass]</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E5F41F16D3897347825909CDA14D6FFB/Description/@EntryValue">Test product endpoint</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E5F41F16D3897347825909CDA14D6FFB/Reformat/@EntryValue">false</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E5F41F16D3897347825909CDA14D6FFB/Scope/=259C9C0D7814EF41A464A42E222F1418/@KeyIndexDefined">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E5F41F16D3897347825909CDA14D6FFB/Scope/=259C9C0D7814EF41A464A42E222F1418/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E5F41F16D3897347825909CDA14D6FFB/Scope/=259C9C0D7814EF41A464A42E222F1418/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E5F41F16D3897347825909CDA14D6FFB/Shortcut/@EntryValue">wdmc15</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E5F41F16D3897347825909CDA14D6FFB/ShortenQualifiedReferences/@EntryValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E5F41F16D3897347825909CDA14D6FFB/Text/@EntryValue">var response = await client.GetAsync($"/api/products/{productId}");
+        
+Assert.Equal(System.Net.HttpStatusCode.OK, response.StatusCode);
+
+dynamic json = Newtonsoft.Json.Linq.JObject.Parse(await response.Content.ReadAsStringAsync());
+
+Assert.Equal(productId, (int)json.id);
+Assert.Equal("Product 1", (string)json.name);
+Assert.Equal("Description 1", (string)json.description);
+Assert.Equal(100m, (decimal)json.price);
+Assert.True((bool)json.isFeatured);
+Assert.Equal("product1_thumbnail.jpg", (string)json.thumbnailUrl);
+Assert.Equal("product1.jpg", (string)json.imageUrl);</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E77A916AA05ED644BEE9C5C2B2585B6C/@KeyIndexDefined">true</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E77A916AA05ED644BEE9C5C2B2585B6C/Applicability/=Live/@EntryIndexedValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E77A916AA05ED644BEE9C5C2B2585B6C/Categories/=_005BWebDev_0020Masterclass_005D/@EntryIndexedValue">[WebDev Masterclass]</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E77A916AA05ED644BEE9C5C2B2585B6C/Description/@EntryValue">Add basic auth header to client</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E77A916AA05ED644BEE9C5C2B2585B6C/Reformat/@EntryValue">false</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E77A916AA05ED644BEE9C5C2B2585B6C/Scope/=D3141179FE3396498C1624D38117585E/@KeyIndexDefined">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E77A916AA05ED644BEE9C5C2B2585B6C/Scope/=D3141179FE3396498C1624D38117585E/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E77A916AA05ED644BEE9C5C2B2585B6C/Scope/=D3141179FE3396498C1624D38117585E/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E77A916AA05ED644BEE9C5C2B2585B6C/Shortcut/@EntryValue">wdmc27</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E77A916AA05ED644BEE9C5C2B2585B6C/ShortenQualifiedReferences/@EntryValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E77A916AA05ED644BEE9C5C2B2585B6C/Text/@EntryValue">if (isAuthenticated)
+{
+    var base64EncodedAuthenticationString = Convert.ToBase64String(System.Text.Encoding.UTF8.GetBytes("test:test"));
+    client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Basic", base64EncodedAuthenticationString);
+}</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=EC6E35FC6F1F424EAC3757E01B398A98/@KeyIndexDefined">true</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=EC6E35FC6F1F424EAC3757E01B398A98/Applicability/=Live/@EntryIndexedValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=EC6E35FC6F1F424EAC3757E01B398A98/Categories/=_005BWebDev_0020Masterclass_005D/@EntryIndexedValue">[WebDev Masterclass]</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=EC6E35FC6F1F424EAC3757E01B398A98/Description/@EntryValue">Get configuration</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=EC6E35FC6F1F424EAC3757E01B398A98/Reformat/@EntryValue">false</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=EC6E35FC6F1F424EAC3757E01B398A98/Scope/=929810FC04B29A4BA41B84F0454FB426/@KeyIndexDefined">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=EC6E35FC6F1F424EAC3757E01B398A98/Scope/=929810FC04B29A4BA41B84F0454FB426/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=EC6E35FC6F1F424EAC3757E01B398A98/Scope/=929810FC04B29A4BA41B84F0454FB426/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=EC6E35FC6F1F424EAC3757E01B398A98/Shortcut/@EntryValue">wdmc10</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=EC6E35FC6F1F424EAC3757E01B398A98/ShortenQualifiedReferences/@EntryValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=EC6E35FC6F1F424EAC3757E01B398A98/Text/@EntryValue">var config = new Microsoft.Extensions.Configuration.ConfigurationManager()
+    .AddJsonFile("appSettings.IntegrationTesting.json")
+    .Build();</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=EC70FC5C5FDDF94882ED91E04AC4E07B/@KeyIndexDefined">true</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=EC70FC5C5FDDF94882ED91E04AC4E07B/Applicability/=Live/@EntryIndexedValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=EC70FC5C5FDDF94882ED91E04AC4E07B/Categories/=_005BWebDev_0020Masterclass_005D/@EntryIndexedValue">[WebDev Masterclass]</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=EC70FC5C5FDDF94882ED91E04AC4E07B/Description/@EntryValue">Add ProductsContext</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=EC70FC5C5FDDF94882ED91E04AC4E07B/Reformat/@EntryValue">false</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=EC70FC5C5FDDF94882ED91E04AC4E07B/Scope/=BFB58FDDF4017F4AADBE5C5A6C574597/@KeyIndexDefined">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=EC70FC5C5FDDF94882ED91E04AC4E07B/Scope/=BFB58FDDF4017F4AADBE5C5A6C574597/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=EC70FC5C5FDDF94882ED91E04AC4E07B/Scope/=BFB58FDDF4017F4AADBE5C5A6C574597/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=EC70FC5C5FDDF94882ED91E04AC4E07B/Shortcut/@EntryValue">wdmc04</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=EC70FC5C5FDDF94882ED91E04AC4E07B/ShortenQualifiedReferences/@EntryValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=EC70FC5C5FDDF94882ED91E04AC4E07B/Text/@EntryValue">var dbDescriptor = services.First(x =&gt; x.ServiceType == typeof(WebDevMasterClass.Services.Products.Data.ProductsContext));
+var optionsDescriptor = services.First(x =&gt; x.ServiceType == typeof(Microsoft.EntityFrameworkCore.DbContextOptions&lt;WebDevMasterClass.Services.Products.Data.ProductsContext&gt;));</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=F67C9DE661F37541A319F181264A7461/@KeyIndexDefined">true</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=F67C9DE661F37541A319F181264A7461/Applicability/=Live/@EntryIndexedValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=F67C9DE661F37541A319F181264A7461/Categories/=_005BWebDev_0020Masterclass_005D/@EntryIndexedValue">[WebDev Masterclass]</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=F67C9DE661F37541A319F181264A7461/Description/@EntryValue">Create DbContextoptions for ProductsContext</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=F67C9DE661F37541A319F181264A7461/Reformat/@EntryValue">false</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=F67C9DE661F37541A319F181264A7461/Scope/=3B71ED1E8FD6474DA8C54E4BD7B8169C/@KeyIndexDefined">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=F67C9DE661F37541A319F181264A7461/Scope/=3B71ED1E8FD6474DA8C54E4BD7B8169C/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=F67C9DE661F37541A319F181264A7461/Scope/=3B71ED1E8FD6474DA8C54E4BD7B8169C/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=F67C9DE661F37541A319F181264A7461/Shortcut/@EntryValue">wdmc11</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=F67C9DE661F37541A319F181264A7461/ShortenQualifiedReferences/@EntryValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=F67C9DE661F37541A319F181264A7461/Text/@EntryValue">var options = new Microsoft.EntityFrameworkCore.DbContextOptionsBuilder&lt;WebDevMasterClass.Services.Products.Data.ProductsContext&gt;()
+        .UseSqlServer(config.GetConnectionString("WebDevMasterClass-Products"));</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FDEF69084F926A458B46A0C843B696D8/@KeyIndexDefined">true</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FDEF69084F926A458B46A0C843B696D8/Applicability/=Live/@EntryIndexedValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FDEF69084F926A458B46A0C843B696D8/Categories/=_005BWebDev_0020Masterclass_005D/@EntryIndexedValue">[WebDev Masterclass]</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FDEF69084F926A458B46A0C843B696D8/Description/@EntryValue">Add AddProduct implementation</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FDEF69084F926A458B46A0C843B696D8/Reformat/@EntryValue">false</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FDEF69084F926A458B46A0C843B696D8/Scope/=588A470E72CC74448E68663B27EF45E2/@KeyIndexDefined">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FDEF69084F926A458B46A0C843B696D8/Scope/=588A470E72CC74448E68663B27EF45E2/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FDEF69084F926A458B46A0C843B696D8/Scope/=588A470E72CC74448E68663B27EF45E2/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FDEF69084F926A458B46A0C843B696D8/Shortcut/@EntryValue">wdmc07</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FDEF69084F926A458B46A0C843B696D8/ShortenQualifiedReferences/@EntryValue">true</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FDEF69084F926A458B46A0C843B696D8/Text/@EntryValue">var sqlCmd = cmd as Microsoft.Data.SqlClient.SqlCommand;
+if (sqlCmd is null)
+    throw new Exception();
+    
+sqlCmd.CommandText = "INSERT INTO Products (Name, Description, Price, IsFeatured, ThumbnailUrl, ImageUrl) " +
+                          "VALUES (@Name, @Description, @Price, @IsFeatured, @ThumbnailUrl, @ImageUrl); " +
+                          "SELECT SCOPE_IDENTITY();";
+                          
+sqlCmd.Parameters.AddWithValue("@Name", name);
+sqlCmd.Parameters.AddWithValue("@Description", description);
+sqlCmd.Parameters.AddWithValue("@Price", price);
+sqlCmd.Parameters.AddWithValue("@IsFeatured", isFeatured);
+sqlCmd.Parameters.AddWithValue("@ThumbnailUrl", $"{imageName}_thumbnail.jpg");
+sqlCmd.Parameters.AddWithValue("@ImageUrl", $"{imageName}.jpg");
+
+var ret = Convert.ToInt32(await sqlCmd.ExecuteScalarAsync());
+
+sqlCmd.Parameters.Clear();
+
+return ret;</s:String>
+</wpf:ResourceDictionary>
