@@ -16,7 +16,7 @@ dotnet dev-certs https --export-path ./ssl-cert.pfx --password P@ssw0rd123!
 
 By doing this, the certificate will automatically be added to the Identity Server container and used by Kestrel.
 
-__Note:__ The code for this is in [the AppHost's Program.cs file](/src/WebDevMasterClass.AppHost/Program.cs)
+__Note:__ The code for this is in [the AppHost's Program.cs file](./src/WebDevMasterClass.AppHost/AppHost.cs)
 
 Once these steps have been completed, you should be able to simply press F5 to run the solution. As long as the __WebDevMasterClass.AppHost__ project is set as start-up project.
 
